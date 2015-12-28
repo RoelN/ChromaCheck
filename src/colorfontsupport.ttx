@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.0">
+
+  <GlyphOrder>
+    <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
+    <GlyphID id="0" name=".notdef"/>
+    <GlyphID id="1" name="uni0000"/>
+    <GlyphID id="2" name="uni0001"/>
+    <GlyphID id="3" name="space"/>
+    <GlyphID id="4" name="uniE900"/> <!-- COLR/CPAL -->
+    <GlyphID id="5" name="c1"/>
+    <GlyphID id="6" name="c2"/>
+    <GlyphID id="7" name="c3"/>
+    <GlyphID id="8" name="c4"/>
+
+    <GlyphID id="9" name="uniE901"/> <!-- SBIX -->
+    <GlyphID id="10" name="uniE902"/> <!-- SVG-in-OT -->
+    <GlyphID id="11" name="uniE903"/> <!-- Google's -->
+  </GlyphOrder>
+
+  <head>
+    <!-- Most of this table will be recalculated by the compiler -->
+    <tableVersion value="1.0"/>
+    <fontRevision value="1.0"/>
+    <checkSumAdjustment value="0xfb79cde8"/>
+    <magicNumber value="0x5f0f3cf5"/>
+    <flags value="00000000 00011011"/>
+    <unitsPerEm value="1024"/>
+    <created value="Wed Dec 23 07:47:28 2015"/>
+    <modified value="Wed Dec 23 10:13:31 2015"/>
+    <xMin value="0"/>
+    <yMin value="0"/>
+    <xMax value="1024"/>
+    <yMax value="1024"/>
+    <macStyle value="00000000 00000000"/>
+    <lowestRecPPEM value="8"/>
+    <fontDirectionHint value="2"/>
+    <indexToLocFormat value="0"/>
+    <glyphDataFormat value="0"/>
+  </head>
+
+  <hhea>
+    <tableVersion value="1.0"/>
+    <ascent value="1024"/>
+    <descent value="0"/>
+    <lineGap value="0"/>
+    <advanceWidthMax value="1024"/>
+    <minLeftSideBearing value="0"/>
+    <minRightSideBearing value="0"/>
+    <xMaxExtent value="1024"/>
+    <caretSlopeRise value="1"/>
+    <caretSlopeRun value="0"/>
+    <caretOffset value="0"/>
+    <reserved0 value="0"/>
+    <reserved1 value="0"/>
+    <reserved2 value="0"/>
+    <reserved3 value="0"/>
+    <metricDataFormat value="0"/>
+    <numberOfHMetrics value="9"/>
+  </hhea>
+
+  <maxp>
+    <!-- Most of this table will be recalculated by the compiler -->
+    <tableVersion value="0x10000"/>
+    <numGlyphs value="9"/>
+    <maxPoints value="4"/>
+    <maxContours value="1"/>
+    <maxCompositePoints value="0"/>
+    <maxCompositeContours value="0"/>
+    <maxZones value="1"/>
+    <maxTwilightPoints value="0"/>
+    <maxStorage value="0"/>
+    <maxFunctionDefs value="10"/>
+    <maxInstructionDefs value="0"/>
+    <maxStackElements value="512"/>
+    <maxSizeOfInstructions value="24"/>
+    <maxComponentElements value="0"/>
+    <maxComponentDepth value="0"/>
+  </maxp>
+
+  <OS_2>
+    <!-- The fields 'usFirstCharIndex' and 'usLastCharIndex'
+         will be recalculated by the compiler -->
+    <version value="4"/>
+    <xAvgCharWidth value="1024"/>
+    <usWeightClass value="400"/>
+    <usWidthClass value="5"/>
+    <fsType value="00000000 00000000"/>
+    <ySubscriptXSize value="665"/>
+    <ySubscriptYSize value="716"/>
+    <ySubscriptXOffset value="0"/>
+    <ySubscriptYOffset value="143"/>
+    <ySuperscriptXSize value="665"/>
+    <ySuperscriptYSize value="716"/>
+    <ySuperscriptXOffset value="0"/>
+    <ySuperscriptYOffset value="491"/>
+    <yStrikeoutSize value="51"/>
+    <yStrikeoutPosition value="265"/>
+    <sFamilyClass value="0"/>
+    <panose>
+      <bFamilyType value="0"/>
+      <bSerifStyle value="0"/>
+      <bWeight value="0"/>
+      <bProportion value="0"/>
+      <bContrast value="0"/>
+      <bStrokeVariation value="0"/>
+      <bArmStyle value="0"/>
+      <bLetterForm value="0"/>
+      <bMidline value="0"/>
+      <bXHeight value="0"/>
+    </panose>
+    <ulUnicodeRange1 value="00000000 00000000 00000000 00000001"/>
+    <ulUnicodeRange2 value="00010000 00000000 00000000 00000000"/>
+    <ulUnicodeRange3 value="00000000 00000000 00000000 00000000"/>
+    <ulUnicodeRange4 value="00000000 00000000 00000000 00000000"/>
+    <achVendID value="    "/>
+    <fsSelection value="00000000 11000000"/>
+    <usFirstCharIndex value="0"/>
+    <usLastCharIndex value="59648"/>
+    <sTypoAscender value="1024"/>
+    <sTypoDescender value="0"/>
+    <sTypoLineGap value="0"/>
+    <usWinAscent value="1024"/>
+    <usWinDescent value="0"/>
+    <ulCodePageRange1 value="00000000 00000000 00000000 00000000"/>
+    <ulCodePageRange2 value="00000000 00000000 00000000 00000000"/>
+    <sxHeight value="0"/>
+    <sCapHeight value="0"/>
+    <usDefaultChar value="0"/>
+    <usBreakChar value="32"/>
+    <usMaxContext value="0"/>
+  </OS_2>
+
+  <hmtx>
+    <mtx name=".notdef" width="1024" lsb="0"/>
+    <mtx name="c1" width="0" lsb="0"/>
+    <mtx name="c2" width="0" lsb="0"/>
+    <mtx name="c3" width="0" lsb="0"/>
+    <mtx name="c4" width="1024" lsb="0"/>
+    <mtx name="space" width="0" lsb="0"/>
+    <mtx name="uni0000" width="0" lsb="0"/>
+    <mtx name="uni0001" width="0" lsb="0"/>
+    <mtx name="uniE900" width="1024" lsb="0"/>
+    <mtx name="uniE901" width="1024" lsb="0"/>
+    <mtx name="uniE902" width="1024" lsb="0"/>
+    <mtx name="uniE903" width="1024" lsb="0"/>
+  </hmtx>
+
+  <cmap>
+    <tableVersion version="0"/>
+    <cmap_format_4 platformID="0" platEncID="3" language="0">
+      <map code="0x0" name="uni0000"/><!-- ???? -->
+      <map code="0x1" name="uni0001"/><!-- ???? -->
+      <map code="0x20" name="space"/><!-- SPACE -->
+      <map code="0xe900" name="uniE900"/><!-- ???? -->
+      <map code="0xe901" name="uniE901"/><!-- ???? -->
+      <map code="0xe902" name="uniE902"/><!-- ???? -->
+      <map code="0xe903" name="uniE903"/><!-- ???? -->
+    </cmap_format_4>
+    <cmap_format_6 platformID="1" platEncID="0" language="0">
+      <map code="0x0" name="uni0000"/>
+      <map code="0x1" name="uni0001"/>
+      <map code="0x2" name=".notdef"/>
+      <map code="0x3" name=".notdef"/>
+      <map code="0x4" name=".notdef"/>
+      <map code="0x5" name=".notdef"/>
+      <map code="0x6" name=".notdef"/>
+      <map code="0x7" name=".notdef"/>
+      <map code="0x8" name=".notdef"/>
+      <map code="0x9" name=".notdef"/>
+      <map code="0xa" name=".notdef"/>
+      <map code="0xb" name=".notdef"/>
+      <map code="0xc" name=".notdef"/>
+      <map code="0xd" name=".notdef"/>
+      <map code="0xe" name=".notdef"/>
+      <map code="0xf" name=".notdef"/>
+      <map code="0x10" name=".notdef"/>
+      <map code="0x11" name=".notdef"/>
+      <map code="0x12" name=".notdef"/>
+      <map code="0x13" name=".notdef"/>
+      <map code="0x14" name=".notdef"/>
+      <map code="0x15" name=".notdef"/>
+      <map code="0x16" name=".notdef"/>
+      <map code="0x17" name=".notdef"/>
+      <map code="0x18" name=".notdef"/>
+      <map code="0x19" name=".notdef"/>
+      <map code="0x1a" name=".notdef"/>
+      <map code="0x1b" name=".notdef"/>
+      <map code="0x1c" name=".notdef"/>
+      <map code="0x1d" name=".notdef"/>
+      <map code="0x1e" name=".notdef"/>
+      <map code="0x1f" name=".notdef"/>
+      <map code="0x20" name="space"/>
+    </cmap_format_6>
+    <cmap_format_4 platformID="3" platEncID="1" language="0">
+      <map code="0x0" name="uni0000"/><!-- ???? -->
+      <map code="0x1" name="uni0001"/><!-- ???? -->
+      <map code="0x20" name="space"/><!-- SPACE -->
+      <map code="0xe900" name="uniE900"/><!-- ???? -->
+      <map code="0xe901" name="uniE901"/><!-- ???? -->
+      <map code="0xe902" name="uniE902"/><!-- ???? -->
+      <map code="0xe903" name="uniE903"/><!-- ???? -->
+    </cmap_format_4>
+  </cmap>
+
+  <fpgm>
+    <assembly>
+      PUSH[ ]	/* 1 value pushed */
+      0
+      FDEF[ ]	/* FunctionDefinition */
+      MPPEM[ ]	/* MeasurePixelPerEm */
+      PUSH[ ]	/* 1 value pushed */
+      9
+      LT[ ]	/* LessThan */
+      IF[ ]	/* If */
+      PUSH[ ]	/* 2 values pushed */
+      1 1
+      INSTCTRL[ ]	/* SetInstrExecControl */
+      EIF[ ]	/* EndIf */
+      PUSH[ ]	/* 1 value pushed */
+      511
+      SCANCTRL[ ]	/* ScanConversionControl */
+      PUSH[ ]	/* 1 value pushed */
+      68
+      SCVTCI[ ]	/* SetCVTCutIn */
+      PUSH[ ]	/* 2 values pushed */
+      9 3
+      SDS[ ]	/* SetDeltaShiftInGState */
+      SDB[ ]	/* SetDeltaBaseInGState */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      1
+      FDEF[ ]	/* FunctionDefinition */
+      DUP[ ]	/* DuplicateTopStack */
+      DUP[ ]	/* DuplicateTopStack */
+      RCVT[ ]	/* ReadCVT */
+      ROUND[01]	/* Round */
+      WCVTP[ ]	/* WriteCVTInPixels */
+      PUSH[ ]	/* 1 value pushed */
+      1
+      ADD[ ]	/* Add */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      2
+      FDEF[ ]	/* FunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      1
+      LOOPCALL[ ]	/* LoopAndCallFunction */
+      POP[ ]	/* PopTopStack */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      FDEF[ ]	/* FunctionDefinition */
+      DUP[ ]	/* DuplicateTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      CINDEX[ ]	/* CopyXToTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      GT[ ]	/* GreaterThan */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      EIF[ ]	/* EndIf */
+      DUP[ ]	/* DuplicateTopStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      DUP[ ]	/* DuplicateTopStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      MD[0]	/* MeasureDistance */
+      ABS[ ]	/* Absolute */
+      ROLL[ ]	/* RollTopThreeStack */
+      DUP[ ]	/* DuplicateTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      DUP[ ]	/* DuplicateTopStack */
+      ROUND[00]	/* Round */
+      SUB[ ]	/* Subtract */
+      ABS[ ]	/* Absolute */
+      PUSH[ ]	/* 1 value pushed */
+      4
+      CINDEX[ ]	/* CopyXToTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      DUP[ ]	/* DuplicateTopStack */
+      ROUND[00]	/* Round */
+      SUB[ ]	/* Subtract */
+      ABS[ ]	/* Absolute */
+      GT[ ]	/* GreaterThan */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      NEG[ ]	/* Negate */
+      ROLL[ ]	/* RollTopThreeStack */
+      EIF[ ]	/* EndIf */
+      MDAP[1]	/* MoveDirectAbsPt */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      0
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      ROUND[01]	/* Round */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      0
+      EQ[ ]	/* Equal */
+      IF[ ]	/* If */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      64
+      EIF[ ]	/* EndIf */
+      ELSE[ ]	/* Else */
+      ROUND[01]	/* Round */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      0
+      EQ[ ]	/* Equal */
+      IF[ ]	/* If */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      64
+      NEG[ ]	/* Negate */
+      EIF[ ]	/* EndIf */
+      EIF[ ]	/* EndIf */
+      MSIRP[0]	/* MoveStackIndirRelPt */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      4
+      FDEF[ ]	/* FunctionDefinition */
+      DUP[ ]	/* DuplicateTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      PUSH[ ]	/* 1 value pushed */
+      4
+      CINDEX[ ]	/* CopyXToTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      GT[ ]	/* GreaterThan */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      EIF[ ]	/* EndIf */
+      DUP[ ]	/* DuplicateTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      DUP[ ]	/* DuplicateTopStack */
+      ROUND[10]	/* Round */
+      SUB[ ]	/* Subtract */
+      ABS[ ]	/* Absolute */
+      PUSH[ ]	/* 1 value pushed */
+      4
+      CINDEX[ ]	/* CopyXToTopStack */
+      GC[0]	/* GetCoordOnPVector */
+      DUP[ ]	/* DuplicateTopStack */
+      ROUND[10]	/* Round */
+      SUB[ ]	/* Subtract */
+      ABS[ ]	/* Absolute */
+      GT[ ]	/* GreaterThan */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      EIF[ ]	/* EndIf */
+      MDAP[1]	/* MoveDirectAbsPt */
+      MIRP[11101]	/* MoveIndirectRelPt */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      5
+      FDEF[ ]	/* FunctionDefinition */
+      MPPEM[ ]	/* MeasurePixelPerEm */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      LT[ ]	/* LessThan */
+      IF[ ]	/* If */
+      LTEQ[ ]	/* LessThenOrEqual */
+      IF[ ]	/* If */
+      PUSH[ ]	/* 1 value pushed */
+      128
+      WCVTP[ ]	/* WriteCVTInPixels */
+      ELSE[ ]	/* Else */
+      PUSH[ ]	/* 1 value pushed */
+      64
+      WCVTP[ ]	/* WriteCVTInPixels */
+      EIF[ ]	/* EndIf */
+      ELSE[ ]	/* Else */
+      POP[ ]	/* PopTopStack */
+      POP[ ]	/* PopTopStack */
+      DUP[ ]	/* DuplicateTopStack */
+      RCVT[ ]	/* ReadCVT */
+      PUSH[ ]	/* 1 value pushed */
+      192
+      LT[ ]	/* LessThan */
+      IF[ ]	/* If */
+      PUSH[ ]	/* 1 value pushed */
+      192
+      WCVTP[ ]	/* WriteCVTInPixels */
+      ELSE[ ]	/* Else */
+      POP[ ]	/* PopTopStack */
+      EIF[ ]	/* EndIf */
+      EIF[ ]	/* EndIf */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      6
+      FDEF[ ]	/* FunctionDefinition */
+      DUP[ ]	/* DuplicateTopStack */
+      DUP[ ]	/* DuplicateTopStack */
+      RCVT[ ]	/* ReadCVT */
+      ROUND[01]	/* Round */
+      WCVTP[ ]	/* WriteCVTInPixels */
+      PUSH[ ]	/* 1 value pushed */
+      1
+      ADD[ ]	/* Add */
+      DUP[ ]	/* DuplicateTopStack */
+      DUP[ ]	/* DuplicateTopStack */
+      RCVT[ ]	/* ReadCVT */
+      RDTG[ ]	/* RoundDownToGrid */
+      ROUND[01]	/* Round */
+      RTG[ ]	/* RoundToGrid */
+      WCVTP[ ]	/* WriteCVTInPixels */
+      PUSH[ ]	/* 1 value pushed */
+      1
+      ADD[ ]	/* Add */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      7
+      FDEF[ ]	/* FunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      6
+      LOOPCALL[ ]	/* LoopAndCallFunction */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      8
+      FDEF[ ]	/* FunctionDefinition */
+      MPPEM[ ]	/* MeasurePixelPerEm */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      PUSH[ ]	/* 1 value pushed */
+      64
+      ELSE[ ]	/* Else */
+      PUSH[ ]	/* 1 value pushed */
+      0
+      EIF[ ]	/* EndIf */
+      ROLL[ ]	/* RollTopThreeStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      128
+      ROLL[ ]	/* RollTopThreeStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      ELSE[ ]	/* Else */
+      ROLL[ ]	/* RollTopThreeStack */
+      SWAP[ ]	/* SwapTopStack */
+      EIF[ ]	/* EndIf */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      192
+      ROLL[ ]	/* RollTopThreeStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      ELSE[ ]	/* Else */
+      ROLL[ ]	/* RollTopThreeStack */
+      SWAP[ ]	/* SwapTopStack */
+      EIF[ ]	/* EndIf */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      256
+      ROLL[ ]	/* RollTopThreeStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      ELSE[ ]	/* Else */
+      ROLL[ ]	/* RollTopThreeStack */
+      SWAP[ ]	/* SwapTopStack */
+      EIF[ ]	/* EndIf */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      320
+      ROLL[ ]	/* RollTopThreeStack */
+      ROLL[ ]	/* RollTopThreeStack */
+      ELSE[ ]	/* Else */
+      ROLL[ ]	/* RollTopThreeStack */
+      SWAP[ ]	/* SwapTopStack */
+      EIF[ ]	/* EndIf */
+      DUP[ ]	/* DuplicateTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      MINDEX[ ]	/* MoveXToTopStack */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      CINDEX[ ]	/* CopyXToTopStack */
+      RCVT[ ]	/* ReadCVT */
+      PUSH[ ]	/* 1 value pushed */
+      384
+      LT[ ]	/* LessThan */
+      IF[ ]	/* If */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      PUSH[ ]	/* 1 value pushed */
+      384
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      ELSE[ ]	/* Else */
+      PUSH[ ]	/* 1 value pushed */
+      3
+      CINDEX[ ]	/* CopyXToTopStack */
+      RCVT[ ]	/* ReadCVT */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      SWAP[ ]	/* SwapTopStack */
+      POP[ ]	/* PopTopStack */
+      EIF[ ]	/* EndIf */
+      ELSE[ ]	/* Else */
+      POP[ ]	/* PopTopStack */
+      EIF[ ]	/* EndIf */
+      WCVTP[ ]	/* WriteCVTInPixels */
+      ENDF[ ]	/* EndFunctionDefinition */
+      PUSH[ ]	/* 1 value pushed */
+      9
+      FDEF[ ]	/* FunctionDefinition */
+      MPPEM[ ]	/* MeasurePixelPerEm */
+      GTEQ[ ]	/* GreaterThanOrEqual */
+      IF[ ]	/* If */
+      RCVT[ ]	/* ReadCVT */
+      WCVTP[ ]	/* WriteCVTInPixels */
+      ELSE[ ]	/* Else */
+      POP[ ]	/* PopTopStack */
+      POP[ ]	/* PopTopStack */
+      EIF[ ]	/* EndIf */
+      ENDF[ ]	/* EndFunctionDefinition */
+    </assembly>
+  </fpgm>
+
+  <prep>
+    <assembly>
+      PUSH[ ]	/* 1 value pushed */
+      0
+      CALL[ ]	/* CallFunction */
+      SVTCA[0]	/* SetFPVectorToAxis */
+      PUSH[ ]	/* 3 values pushed */
+      1 1 7
+      CALL[ ]	/* CallFunction */
+      PUSH[ ]	/* 1 value pushed */
+      0
+      DUP[ ]	/* DuplicateTopStack */
+      RCVT[ ]	/* ReadCVT */
+      RDTG[ ]	/* RoundDownToGrid */
+      ROUND[01]	/* Round */
+      RTG[ ]	/* RoundToGrid */
+      WCVTP[ ]	/* WriteCVTInPixels */
+    </assembly>
+  </prep>
+
+  <cvt>
+    <cv index="0" value="21"/>
+    <cv index="1" value="0"/>
+    <cv index="2" value="0"/>
+  </cvt>
+
+  <loca>
+    <!-- The 'loca' table will be calculated by the compiler -->
+  </loca>
+
+  <glyf>
+
+    <!-- The xMin, yMin, xMax and yMax values
+         will be recalculated by the compiler. -->
+
+    <TTGlyph name=".notdef"/><!-- contains no outline data -->
+
+    <TTGlyph name="c1" xMin="0" yMin="0" xMax="0" yMax="0">
+      <contour>
+        <pt x="0" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions><assembly>
+        </assembly></instructions>
+    </TTGlyph>
+
+    <TTGlyph name="c2" xMin="0" yMin="0" xMax="0" yMax="0">
+      <contour>
+        <pt x="0" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions><assembly>
+        </assembly></instructions>
+    </TTGlyph>
+
+    <TTGlyph name="c3" xMin="0" yMin="0" xMax="0" yMax="0">
+      <contour>
+        <pt x="0" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions><assembly>
+        </assembly></instructions>
+    </TTGlyph>
+
+    <TTGlyph name="c4" xMin="0" yMin="0" xMax="1024" yMax="1024">
+      <contour>
+        <pt x="0" y="1024" on="1"/>
+        <pt x="1024" y="1024" on="1"/>
+        <pt x="1024" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions><assembly>
+          PUSH[ ] /* 1 value pushed */
+          0
+          CALL[ ] /* CallFunction */
+          SVTCA[0]  /* SetFPVectorToAxis */
+          PUSH[ ] /* 1 value pushed */
+          0
+          RCVT[ ] /* ReadCVT */
+          IF[ ] /* If */
+          PUSH[ ] /* 1 value pushed */
+          2
+          MDAP[1] /* MoveDirectAbsPt */
+          ELSE[ ] /* Else */
+          PUSH[ ] /* 2 values pushed */
+          2 1
+          MIAP[0] /* MoveIndirectAbsPt */
+          EIF[ ]  /* EndIf */
+          IUP[0]  /* InterpolateUntPts */
+          IUP[1]  /* InterpolateUntPts */
+        </assembly></instructions>
+    </TTGlyph>
+
+    <TTGlyph name="space"/><!-- contains no outline data -->
+
+    <TTGlyph name="uni0000"/><!-- contains no outline data -->
+
+    <TTGlyph name="uni0001"/><!-- contains no outline data -->
+
+    <TTGlyph name="uniE900"/><!-- contains no outline data -->
+    <TTGlyph name="uniE901"/><!-- contains no outline data -->
+    <TTGlyph name="uniE902"/><!-- contains no outline data -->
+    <TTGlyph name="uniE903"/><!-- contains no outline data -->
+
+  </glyf>
+
+  <name>
+    <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      PixelAmbacht Color
+    </namerecord>
+    <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Regular
+    </namerecord>
+    <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      1.000;;PixelAmbacht-Color;2015;TR4-4.0.1.5095
+    </namerecord>
+    <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      PixelAmbacht Color
+    </namerecord>
+    <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Version 1.0
+    </namerecord>
+    <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      PixelAmbacht-Color
+    </namerecord>
+    <namerecord nameID="10" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Font to test color support.
+    </namerecord>
+    <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+      PixelAmbacht Color
+    </namerecord>
+    <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
+      Regular
+    </namerecord>
+    <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+      1.000;;PixelAmbacht-Color;2015;TR4-4.0.1.5095
+    </namerecord>
+    <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+      PixelAmbacht Color
+    </namerecord>
+    <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
+      Version 1.0
+    </namerecord>
+    <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+      PixelAmbacht-Color
+    </namerecord>
+    <namerecord nameID="10" platformID="3" platEncID="1" langID="0x409">
+      Font to test color support.
+    </namerecord>
+    <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+      Pixelambacht
+    </namerecord>
+    <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
+      Color
+    </namerecord>
+  </name>
+
+  <post>
+    <formatType value="2.0"/>
+    <italicAngle value="0.0"/>
+    <underlinePosition value="0"/>
+    <underlineThickness value="0"/>
+    <isFixedPitch value="0"/>
+    <minMemType42 value="0"/>
+    <maxMemType42 value="0"/>
+    <minMemType1 value="0"/>
+    <maxMemType1 value="0"/>
+    <psNames>
+      <!-- This file uses unique glyph names based on the information
+           found in the 'post' table. Since these names might not be unique,
+           we have to invent artificial names in case of clashes. In order to
+           be able to retain the original information, we need a name to
+           ps name mapping for those cases where they differ. That's what
+           you see below.
+            -->
+    </psNames>
+    <extraNames>
+      <!-- following are the name that are not taken from the standard Mac glyph order -->
+      <psName name="uni0000"/>
+      <psName name="uni0001"/>
+      <psName name="uniE900"/>
+      <psName name="uniE901"/>
+      <psName name="uniE902"/>
+      <psName name="uniE903"/>
+      <psName name="c1"/>
+      <psName name="c2"/>
+      <psName name="c3"/>
+      <psName name="c4"/>
+    </extraNames>
+  </post>
+
+  <gasp>
+    <gaspRange rangeMaxPPEM="8" rangeGaspBehavior="10"/>
+    <gaspRange rangeMaxPPEM="14" rangeGaspBehavior="5"/>
+    <gaspRange rangeMaxPPEM="65535" rangeGaspBehavior="15"/>
+  </gasp>
+
+  <SVG>
+    <svgDoc endGlyphID="1" startGlyphID="1">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph1" transform="scale(1,-1)">
+<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
+</svg>
+]]>
+    </svgDoc>
+    <svgDoc endGlyphID="2" startGlyphID="2">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph2" transform="scale(1,-1)">
+<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
+</svg>
+]]>
+    </svgDoc>
+    <svgDoc endGlyphID="3" startGlyphID="9">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph3" transform="scale(1,-1)">
+<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
+</svg>
+]]>
+    </svgDoc>
+    <!-- SVG color -->
+    <svgDoc endGlyphID="10" startGlyphID="10">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 1024 1024" id="glyph10" transform="scale(1,-1)">
+<path fill="#ff00ff"  d="M0 1024 L1024 1024 L1024 0 L0 0 L0 1024 L0 1024 Z " />
+</svg>
+]]>
+    </svgDoc>
+    <colorPalettes></colorPalettes>
+  </SVG>
+
+  <sbix>
+    <version value="1"/>
+    <flags value="00000000 00000001"/>
+    <strike>
+      <ppem value="300"/>
+      <resolution value="72"/>
+      <glyph name=".notdef"/>
+      <glyph graphicType="png " name="uni0000" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          00000001 00000001 08060000 001f15c4
+          89000000 0d494441 54089963 60606060
+          00000005 000187a1 4ed40000 00004945
+          4e44ae42 6082
+        </hexdata>
+      </glyph>
+      <glyph graphicType="png " name="uni0001" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          00000001 00000001 08060000 001f15c4
+          89000000 0d494441 54089963 60606060
+          00000005 000187a1 4ed40000 00004945
+          4e44ae42 6082
+        </hexdata>
+      </glyph>
+      <glyph graphicType="png " name="space" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          00000001 00000001 08060000 001f15c4
+          89000000 0d494441 54089963 60606060
+          00000005 000187a1 4ed40000 00004945
+          4e44ae42 6082
+        </hexdata>
+      </glyph>
+      <glyph graphicType="png " name="uniE901" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          0000012d 0000012d 08060000 005de336
+          ee000003 fc494441 54789ced d4410d80
+          3000c040 8603b4a0 05956899 16248006
+          1e8434b9 53d057c7 39af7b01 0838f66d
+          ac7f4700 bc615a40 8a690129 a605a498
+          1690625a 408a6901 29a605a4 98169062
+          5a408a69 0129a605 a4981690 625a408a
+          690129a6 05a49816 90625a40 8a690129
+          a605a498 1690625a 408a6901 29a605a4
+          98169062 5a408a69 0129a605 a4981690
+          625a408a 690129a6 05a49816 90625a40
+          8a690129 a605a498 1690625a 408a6901
+          29a605a4 98169062 5a408a69 0129a605
+          a4981690 625a408a 690129a6 05a49816
+          90625a40 8a690129 a605a498 1690625a
+          408a6901 29a605a4 98169062 5a408a69
+          0129a605 a4981690 625a408a 690129a6
+          05a49816 90625a40 8a690129 a605a498
+          1690625a 408a6901 29a605a4 98169062
+          5a408a69 0129a605 a4981690 625a408a
+          690129a6 05a49816 90625a40 8a690129
+          a605a498 1690625a 408a6901 29a605a4
+          98169062 5a408a69 0129a605 a4981690
+          625a408a 690129a6 05a49816 90625a40
+          8a690129 a605a498 1690625a 408a6901
+          29a605a4 98169062 5a408a69 0129a605
+          a4981690 625a408a 690129a6 05a49816
+          90625a40 8a690129 a605a498 1690625a
+          408a6901 29a605a4 98169062 5a408a69
+          0129a605 a4981690 625a408a 690129a6
+          05a49816 90625a40 8a690129 a605a498
+          1690625a 408a6901 29a605a4 98169062
+          5a408a69 0129a605 a4981690 625a408a
+          690129a6 05a49816 90625a40 8a690129
+          a605a498 1690625a 408a6901 29a605a4
+          98169062 5a408a69 0129a605 a4981690
+          625a408a 690129a6 05a49816 90625a40
+          8a690129 a605a498 1690625a 408a6901
+          29a605a4 98169062 5a408a69 0129a605
+          a4981690 625a408a 690129a6 05a49816
+          90625a40 8a690129 a605a498 1690625a
+          408a6901 29a605a4 98169062 5a408a69
+          0129a605 a4981690 625a408a 690129a6
+          05a49816 90625a40 8a690129 a605a498
+          1690625a 408a6901 29a605a4 98169062
+          5a408a69 0129a605 a4981690 625a408a
+          690129a6 05a49816 90625a40 8a690129
+          a605a498 1690625a 408a6901 29a605a4
+          98169062 5a408a69 0129a605 a4981690
+          625a408a 690129a6 05a49816 90625a40
+          8a690129 a605a498 1690625a 408a6901
+          29a605a4 98169062 5a408a69 0129a605
+          a4981690 625a408a 690129a6 05a49816
+          90625a40 8a690129 a605a498 1690625a
+          408a6901 29a605a4 98169062 5a408a69
+          0129a605 a4981690 625a408a 690129a6
+          05a49816 90625a40 8a690129 a605a498
+          1690625a 408a6901 29a605a4 98169062
+          5a408a69 0129a605 a4981690 625a408a
+          690129a6 05a49816 90625a40 8a690129
+          a605a498 1690625a 408a6901 29a605a4
+          98169062 5a408a69 0129a605 a4981690
+          625a408a 690129a6 05a49816 90625a40
+          8a690129 a605a498 1690625a 408a6901
+          29a605a4 98169062 5a408a69 01007ce5
+          01732b06 58e01c2c d9000000 0049454e
+          44ae4260 82
+        </hexdata>
+      </glyph>
+    </strike>
+  </sbix>
+
+  <COLR>
+    <version value="0"/>
+    <ColorGlyph name="uni0000">
+      <layer colorID="0" name="c1"/>
+    </ColorGlyph>
+    <ColorGlyph name="uni0001">
+      <layer colorID="0" name="c2"/>
+    </ColorGlyph>
+    <ColorGlyph name="space">
+      <layer colorID="0" name="c3"/>
+    </ColorGlyph>
+    <ColorGlyph name="uniE900">
+      <layer colorID="0" name="c4"/>
+    </ColorGlyph>
+  </COLR>
+
+  <CPAL>
+    <version value="0"/>
+    <numPaletteEntries value="1"/>
+    <palette index="0">
+      <color index="0" value="#FF0000FF"/> <!-- COLR/CPAL color -->
+    </palette>
+  </CPAL>
+
+
+</ttFont>
