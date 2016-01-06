@@ -5,6 +5,7 @@ Tried so far:
 - Paint on canvas, read color to see which glyph rendered (doesn't work, no color fonts in canvas)
 - Stick text in SVG, read that out somehow by "rasterizing" SVG (first attemt didn't work)
 - Different size color glyph. Fails because original glyph dimensions are used, so color glyph will just run outside it's box without influencing anything.
+- Leave out 'glyf' table so no glyph would be rendered, unless the browser supports it. Then measure the width to determine which of the two happened. (Doesn't work: no `glyf`, no glyph -- color or otherwise)
 
 To try:
 

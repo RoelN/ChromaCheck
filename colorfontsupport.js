@@ -5,7 +5,8 @@ function clrtest() {
       var tempStyle = document.createElement("style");
       tempStyle.type = "text/css";
       document.getElementsByTagName("head")[0].appendChild(tempStyle);
-      tempStyle.textContent = "@font-face{font-family:'colorfontsupport';src:url('colorfontsupport.woff?v=8') format('woff');}";
+      // tempStyle.textContent = "@font-face{font-family:'colorfontsupport';src:url('colorfontsupport.woff?v=8') format('woff');}";
+      tempStyle.textContent = "@font-face{font-family:'colorfontsupport';src:url('colorfontsupport-noglyf.ttf?v=9') format('opentype');}";
       // tempStyle.textContent = "@font-face{font-family:'colorfontsupport';src:url('bixa.woff?v=6') format('woff');}";
 
       // Create a 35x35 Canvas block.
