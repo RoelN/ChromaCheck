@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ttx ./src/*.ttx
-mv ./src/*.ttf .
-# sfnt2woff-zopfli doesn't take wildcards, so stick with ttf for testing
-# sfnt2woff-zopfli *.ttf
-# rm *.ttf
+ttx ./src/colorfontsupport.ttx
+mv ./src/colorfontsupport.ttf .
+# sfnt2woff-zopfli colorfontsupport.ttf
+openssl base64 -A -in colorfontsupport.ttf -out colorfontsupport.base64
+rm *.ttf
