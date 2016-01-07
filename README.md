@@ -1,26 +1,28 @@
 # ChromaCheck
 
-This is a WIP project to find out if we can check for color font support. We do this by rendering our color glyphs to canvas, and then read out the pixels to see if we have any color pixels.
+Feature test to check browsers for color font support. We do this by rendering our color glyphs to canvas, and then read out the pixels to see if we have any color.
 
 ## Text on canvas
 
 Use `fillText()` to render text to canvas.
 
-*Safari* on OSX renders color glyphs :)
+**Safari** on OSX renders SBIX color glyph :)
 
-*Firefox* doesn't render any color glyphs. For Firefox 41 and up this is expected ([there is a bug in Skia that prevents color glyphs from being rendered](https://bugzilla.mozilla.org/show_bug.cgi?id=1209480)). Problem is, in Firefox 46 (current nightly), this is fixed and color fonts installed on OS work fine, but loaded through `@font-face` don't.
+**Firefox** on OSX doesn't render any color glyphs. For Firefox 41 and up this is expected ([there is a bug in Skia that prevents color glyphs from being rendered](https://bugzilla.mozilla.org/show_bug.cgi?id=1209480)). Problem is, in Firefox 46 (current nightly), this is fixed and color fonts installed on OS work fine, but loaded through `@font-face` don't.
 
-*Chrome/Opera* doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
+**Chrome/Opera** on OSX doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
+
+**Internet Explorer 11** on Windows 8.1 renders COLR/CPAL glyph :)
 
 ## Text in SVG, rendered to Canvas
 
 To avoid problems with `fillText()` we can also render an SVG _with the testfont embedded_ to `canvas`.
 
-*Safari* renders nothing at all.
+**Safari** on OSX renders nothing at all.
 
-*Firefox* renders color glyphs :)
+**Firefox** on OSX and Windows renders SVG-in-OpenType and COLR/CPAL color glyphs :)
 
-*Chrome/Opera* doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
+**Chrome/Opera** on OSX doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
 
 ## Todo
 
