@@ -24,9 +24,10 @@ To avoid problems with `fillText()` we can also render an SVG _with the testfont
 
 **Chrome/Opera** on OSX doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
 
+**Internet Explorer 11** on Windows 8.1 renders COLR/CPAL glyph :)
+
 ## Todo
 
-- Test IE/EDGE on Windows
 - Put HTML with the test font applied in an SVG `foreighObject`
 - Add a control character to the test font to make 100% sure the font is rendered
 - Avoid the `setTimeout` hack with the `fillText()` method
