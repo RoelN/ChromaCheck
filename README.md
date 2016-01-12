@@ -1,39 +1,15 @@
 # ChromaCheck
 
-Feature test to check browsers for color font support. We do this by rendering our color glyphs to canvas, and then read out the pixels to see if we have any color.
+**This stuff is still in progress! :)** Feature test to check if browsers support one of the [color font formats](http://pixelambacht.nl/2014/multicolor-fonts/).
 
-## Text on canvas
+## How it works
 
-Use `fillText()` to render text to canvas.
-
-**Safari** on OSX renders SBIX color glyph :)
-
-**Firefox** on OSX doesn't render any color glyphs. For Firefox 41 and up this is expected ([there is a bug in Skia that prevents color glyphs from being rendered](https://bugzilla.mozilla.org/show_bug.cgi?id=1209480)). Problem is, in Firefox 46 (current nightly), this is fixed and color fonts installed on OS work fine, but loaded through `@font-face` don't.
-
-**Chrome/Opera** on OSX doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
-
-**Internet Explorer 11** on Windows 8.1 renders COLR/CPAL glyph :)
-
-## Text in SVG, rendered to Canvas
-
-To avoid problems with `fillText()` we can also render an SVG _with the testfont embedded_ to `canvas`.
-
-**Safari** on OSX renders nothing at all.
-
-**Firefox** on OSX and Windows renders SVG-in-OpenType and COLR/CPAL color glyphs :)
-
-**Chrome/Opera** on OSX doesn't render any color glyphs. This is not a bug, Chrome doesn't support any color font format.
-
-**Internet Explorer 11** on Windows 8.1 renders COLR/CPAL glyph :)
+We test for color font support by rendering color glyphs to canvas, and then readinh out the pixels to see if we have any color. Due to a bug in the current versions of Firefox (41 till 46, at least, see [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1209480) and [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1237640)), we don't use `fillText()` but stick our font in an SVG image.
 
 ## Todo
 
-- Put HTML with the test font applied in an SVG `foreighObject`
-- Add a control character to the test font to make 100% sure the font is rendered
-- Avoid the `setTimeout` hack with the `fillText()` method
 - Add Google CBDT/CBLC table to test font
 - Move back to WOFF for the format of the test font (it's TTF now)
-- Color glyph not rendering in Firefox 46 is a bug, report it as such
 - Optimize font (see Bram Stein's Nanofont and use pyftsubset), and compress to WOFF
 
 ## Observations, findings and nuggets of "hey, didn't know that"
