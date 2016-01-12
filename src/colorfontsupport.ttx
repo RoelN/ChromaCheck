@@ -6,7 +6,6 @@
     <GlyphID id="0" name=".notdef"/>
     <GlyphID id="1" name="uni0000"/>
     <GlyphID id="2" name="uni0001"/>
-    <GlyphID id="3" name="space"/>
     <GlyphID id="5" name="c1"/>
     <GlyphID id="6" name="c2"/>
     <GlyphID id="7" name="c3"/>
@@ -138,7 +137,6 @@
     <mtx name="c2" width="0" lsb="0"/>
     <mtx name="c3" width="0" lsb="0"/>
     <mtx name="c4" width="1024" lsb="0"/>
-    <mtx name="space" width="0" lsb="0"/>
     <mtx name="uni0000" width="0" lsb="0"/>
     <mtx name="uni0001" width="0" lsb="0"/>
     <mtx name="uniE900" width="1024" lsb="0"/>
@@ -153,7 +151,6 @@
     <cmap_format_4 platformID="0" platEncID="3" language="0">
       <map code="0x0" name="uni0000"/><!-- ???? -->
       <map code="0x1" name="uni0001"/><!-- ???? -->
-      <map code="0x20" name="space"/><!-- SPACE -->
       <map code="0xe900" name="uniE900"/><!-- ???? -->
       <map code="0xe901" name="uniE901"/><!-- ???? -->
       <map code="0xe902" name="uniE902"/><!-- ???? -->
@@ -193,12 +190,10 @@
       <map code="0x1d" name=".notdef"/>
       <map code="0x1e" name=".notdef"/>
       <map code="0x1f" name=".notdef"/>
-      <map code="0x20" name="space"/>
     </cmap_format_6>
     <cmap_format_4 platformID="3" platEncID="1" language="0">
       <map code="0x0" name="uni0000"/><!-- ???? -->
       <map code="0x1" name="uni0001"/><!-- ???? -->
-      <map code="0x20" name="space"/><!-- SPACE -->
       <map code="0xe900" name="uniE900"/><!-- ???? -->
       <map code="0xe901" name="uniE901"/><!-- ???? -->
       <map code="0xe902" name="uniE902"/><!-- ???? -->
@@ -651,7 +646,6 @@
         </assembly></instructions>
     </TTGlyph>
 
-    <TTGlyph name="space"/><!-- contains no outline data -->
 
     <TTGlyph name="uni0000"/><!-- contains no outline data -->
 
@@ -775,16 +769,9 @@
 </svg>
 ]]>
     </svgDoc>
-    <svgDoc endGlyphID="2" startGlyphID="2">
+    <svgDoc endGlyphID="2" startGlyphID="9">
       <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph2" transform="scale(1,-1)">
-<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
-</svg>
-]]>
-    </svgDoc>
-    <svgDoc endGlyphID="3" startGlyphID="9">
-      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph3" transform="scale(1,-1)">
 <path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
 </svg>
 ]]>
@@ -817,15 +804,6 @@
         </hexdata>
       </glyph>
       <glyph graphicType="png " name="uni0001" originOffsetX="0" originOffsetY="0">
-        <hexdata>
-          89504e47 0d0a1a0a 0000000d 49484452
-          00000001 00000001 08060000 001f15c4
-          89000000 0d494441 54089963 60606060
-          00000005 000187a1 4ed40000 00004945
-          4e44ae42 6082
-        </hexdata>
-      </glyph>
-      <glyph graphicType="png " name="space" originOffsetX="0" originOffsetY="0">
         <hexdata>
           89504e47 0d0a1a0a 0000000d 49484452
           00000001 00000001 08060000 001f15c4
@@ -916,9 +894,6 @@
     </ColorGlyph>
     <ColorGlyph name="uni0001">
       <layer colorID="0" name="c2"/>
-    </ColorGlyph>
-    <ColorGlyph name="space">
-      <layer colorID="0" name="c3"/>
     </ColorGlyph>
     <ColorGlyph name="uniE900">
       <layer colorID="0" name="c4"/>
