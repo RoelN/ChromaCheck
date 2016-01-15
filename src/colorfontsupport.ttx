@@ -15,7 +15,7 @@
     <GlyphID id="9" name="uniE901"/> <!-- SBIX -->
     <GlyphID id="10" name="uniE902"/> <!-- SVG-in-OT -->
     <GlyphID id="11" name="uniE903"/> <!-- Google's -->
-    <GlyphID id="11" name="uniE904"/> <!-- Control character (normal glyph) -->
+    <GlyphID id="12" name="uniE904"/> <!-- Control character (normal glyph) -->
   </GlyphOrder>
 
   <head>
@@ -464,6 +464,84 @@
       <color index="0" value="#c80000FF"/> <!-- COLR/CPAL color -->
     </palette>
   </CPAL>
+
+
+
+
+
+
+
+   <CBDT>
+    <header version="2.0"/>
+    <strikedata index="0">
+      <cbdt_bitmap_format_17 name="uniE903">
+        <SmallGlyphMetrics>
+          <height value="80"/>
+          <width value="80"/>
+          <BearingX value="0"/>
+          <BearingY value="80"/>
+          <Advance value="80"/>
+        </SmallGlyphMetrics>
+        <rawimagedata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          00000050 00000050 01030000 00b4df60
+          ee000000 03504c54 45640000 e8a45e26
+          00000010 49444154 780163a0 1b1805a3
+          60140000 03700001 dc91ef93 00000000
+          49454e44 ae426082
+        </rawimagedata>
+      </cbdt_bitmap_format_17>
+    </strikedata>
+  </CBDT>
+
+  <CBLC>
+    <header version="2.0"/>
+    <strike index="0">
+      <bitmapSizeTable>
+        <sbitLineMetrics direction="hori">
+          <ascender value="80"/>
+          <descender value="0"/>
+          <widthMax value="80"/>
+          <caretSlopeNumerator value="0"/>
+          <caretSlopeDenominator value="0"/>
+          <caretOffset value="0"/>
+          <minOriginSB value="0"/>
+          <minAdvanceSB value="0"/>
+          <maxBeforeBL value="0"/>
+          <minAfterBL value="0"/>
+          <pad1 value="0"/>
+          <pad2 value="0"/>
+        </sbitLineMetrics>
+        <sbitLineMetrics direction="vert">
+          <ascender value="80"/>
+          <descender value="0"/>
+          <widthMax value="80"/>
+          <caretSlopeNumerator value="0"/>
+          <caretSlopeDenominator value="0"/>
+          <caretOffset value="0"/>
+          <minOriginSB value="0"/>
+          <minAdvanceSB value="0"/>
+          <maxBeforeBL value="0"/>
+          <minAfterBL value="0"/>
+          <pad1 value="0"/>
+          <pad2 value="0"/>
+        </sbitLineMetrics>
+        <colorRef value="0"/>
+        <startGlyphIndex value="1"/>
+        <endGlyphIndex value="1"/>
+        <ppemX value="80"/>
+        <ppemY value="80"/>
+        <bitDepth value="32"/>
+        <flags value="1"/>
+      </bitmapSizeTable>
+      <!-- GlyphIds are written but not read. The firstGlyphIndex and
+           lastGlyphIndex values will be recalculated by the compiler. -->
+      <eblc_index_sub_table_1 imageFormat="17" firstGlyphIndex="11" lastGlyphIndex="11">
+        <glyphLoc id="11" name="uniE903"/>
+      </eblc_index_sub_table_1>
+    </strike>
+  </CBLC>
+
 
 
 </ttFont>
