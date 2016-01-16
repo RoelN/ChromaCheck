@@ -6,28 +6,27 @@
     <GlyphID id="0" name=".notdef"/>
     <GlyphID id="1" name="uni0000"/>
     <GlyphID id="2" name="uni0001"/>
-    <GlyphID id="5" name="c1"/>
-    <GlyphID id="6" name="c2"/>
-    <GlyphID id="7" name="c3"/>
-    <GlyphID id="8" name="c4"/>
-
-    <GlyphID id="4" name="uniE900"/> <!-- COLR/CPAL -->
-    <GlyphID id="9" name="uniE901"/> <!-- SBIX -->
-    <GlyphID id="10" name="uniE902"/> <!-- SVG-in-OT -->
-    <GlyphID id="11" name="uniE903"/> <!-- Google's -->
-    <GlyphID id="12" name="uniE904"/> <!-- Control character (normal glyph) -->
+    <GlyphID id="3" name="c1"/>
+    <GlyphID id="4" name="c2"/>
+    <GlyphID id="5" name="c3"/>
+    <GlyphID id="6" name="c4"/>
+    <GlyphID id="7" name="uniE900"/>
+    <GlyphID id="8" name="uniE901"/>
+    <GlyphID id="9" name="uniE902"/>
+    <GlyphID id="10" name="uniE903"/>
+    <GlyphID id="11" name="uniE904"/>
   </GlyphOrder>
 
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xfb79cde8"/>
+    <checkSumAdjustment value="0x16a1548b"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Wed Dec 23 10:13:31 2015"/>
+    <modified value="Fri Jan 15 08:02:55 2016"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -56,14 +55,14 @@
     <reserved2 value="0"/>
     <reserved3 value="0"/>
     <metricDataFormat value="0"/>
-    <numberOfHMetrics value="9"/>
+    <numberOfHMetrics value="7"/>
   </hhea>
 
   <maxp>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
-    <numGlyphs value="9"/>
-    <maxPoints value="4"/>
+    <numGlyphs value="12"/>
+    <maxPoints value="5"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
@@ -116,7 +115,7 @@
     <achVendID value="    "/>
     <fsSelection value="00000000 11000000"/>
     <usFirstCharIndex value="0"/>
-    <usLastCharIndex value="59648"/>
+    <usLastCharIndex value="59652"/>
     <sTypoAscender value="1024"/>
     <sTypoDescender value="0"/>
     <sTypoLineGap value="0"/>
@@ -202,7 +201,6 @@
     </cmap_format_4>
   </cmap>
 
-
   <cvt>
     <cv index="0" value="21"/>
     <cv index="1" value="0"/>
@@ -254,17 +252,20 @@
         <pt x="1024" y="0" on="1"/>
         <pt x="0" y="0" on="1"/>
       </contour>
-      <instructions><assembly></assembly></instructions>
+      <instructions><assembly>
+        </assembly></instructions>
     </TTGlyph>
-
 
     <TTGlyph name="uni0000"/><!-- contains no outline data -->
 
     <TTGlyph name="uni0001"/><!-- contains no outline data -->
 
     <TTGlyph name="uniE900"/><!-- contains no outline data -->
+
     <TTGlyph name="uniE901"/><!-- contains no outline data -->
+
     <TTGlyph name="uniE902"/><!-- contains no outline data -->
+
     <TTGlyph name="uniE903"/><!-- contains no outline data -->
 
     <TTGlyph name="uniE904" xMin="0" yMin="0" xMax="1024" yMax="1024">
@@ -363,6 +364,7 @@
       <psName name="c2"/>
       <psName name="c3"/>
       <psName name="c4"/>
+      <psName name="uniE904"/>
     </extraNames>
   </post>
 
@@ -372,106 +374,7 @@
     <gaspRange rangeMaxPPEM="65535" rangeGaspBehavior="15"/>
   </gasp>
 
-  <SVG>
-    <svgDoc endGlyphID="1" startGlyphID="1">
-      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph1" transform="scale(1,-1)">
-<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
-</svg>
-]]>
-    </svgDoc>
-    <svgDoc endGlyphID="2" startGlyphID="9">
-      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph2" transform="scale(1,-1)">
-<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
-</svg>
-]]>
-    </svgDoc>
-    <!-- SVG color -->
-    <svgDoc endGlyphID="10" startGlyphID="10">
-      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 1024 1024" id="glyph10" transform="scale(1,-1)">
-<path fill="#320000"  d="M0 1024 L1024 1024 L1024 0 L0 0 L0 1024 L0 1024 Z " />
-</svg>
-]]>
-    </svgDoc>
-    <colorPalettes></colorPalettes>
-  </SVG>
-
-  <sbix>
-    <version value="1"/>
-    <flags value="00000000 00000001"/>
-    <strike>
-      <ppem value="300"/>
-      <resolution value="72"/>
-      <glyph name=".notdef"/>
-      <glyph graphicType="png " name="uni0000" originOffsetX="0" originOffsetY="0">
-        <hexdata>
-          89504e47 0d0a1a0a 0000000d 49484452
-          00000001 00000001 08060000 001f15c4
-          89000000 0d494441 54089963 60606060
-          00000005 000187a1 4ed40000 00004945
-          4e44ae42 6082
-        </hexdata>
-      </glyph>
-      <glyph graphicType="png " name="uni0001" originOffsetX="0" originOffsetY="0">
-        <hexdata>
-          89504e47 0d0a1a0a 0000000d 49484452
-          00000001 00000001 08060000 001f15c4
-          89000000 0d494441 54089963 60606060
-          00000005 000187a1 4ed40000 00004945
-          4e44ae42 6082
-        </hexdata>
-      </glyph>
-      <glyph graphicType="png " name="uniE901" originOffsetX="0" originOffsetY="0">
-        <hexdata>
-8950 4e47 0d0a 1a0a 0000 000d 4948 4452
-0000 012c 0000 012c 0803 0000 004e a37e
-4700 0000 1974 4558 7453 6f66 7477 6172
-6500 4164 6f62 6520 496d 6167 6552 6561
-6479 71c9 653c 0000 0006 504c 5445 9600
-0000 0000 6e58 4c91 0000 0070 4944 4154
-78da ecc1 0101 0000 0082 20ff af6e 4840
-0100 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 00f0 6e02 0c00 60cb 0001
-3896 7a14 0000 0000 4945 4e44 ae42 6082
-        </hexdata>
-      </glyph>
-    </strike>
-  </sbix>
-
-  <COLR>
-    <version value="0"/>
-    <ColorGlyph name="uni0000">
-      <layer colorID="0" name="c1"/>
-    </ColorGlyph>
-    <ColorGlyph name="uni0001">
-      <layer colorID="0" name="c2"/>
-    </ColorGlyph>
-    <ColorGlyph name="uniE900">
-      <layer colorID="0" name="c4"/>
-    </ColorGlyph>
-  </COLR>
-
-  <CPAL>
-    <version value="0"/>
-    <numPaletteEntries value="1"/>
-    <palette index="0">
-      <color index="0" value="#c80000FF"/> <!-- COLR/CPAL color -->
-    </palette>
-  </CPAL>
-
-
-
-
-
-
-
-   <CBDT>
+  <CBDT>
     <header version="2.0"/>
     <strikedata index="0">
       <cbdt_bitmap_format_17 name="uniE903">
@@ -527,8 +430,8 @@
           <pad2 value="0"/>
         </sbitLineMetrics>
         <colorRef value="0"/>
-        <startGlyphIndex value="1"/>
-        <endGlyphIndex value="1"/>
+        <startGlyphIndex value="10"/>
+        <endGlyphIndex value="10"/>
         <ppemX value="80"/>
         <ppemY value="80"/>
         <bitDepth value="32"/>
@@ -536,12 +439,108 @@
       </bitmapSizeTable>
       <!-- GlyphIds are written but not read. The firstGlyphIndex and
            lastGlyphIndex values will be recalculated by the compiler. -->
-      <eblc_index_sub_table_1 imageFormat="17" firstGlyphIndex="11" lastGlyphIndex="11">
-        <glyphLoc id="11" name="uniE903"/>
+      <eblc_index_sub_table_1 imageFormat="17" firstGlyphIndex="10" lastGlyphIndex="10">
+        <glyphLoc id="10" name="uniE903"/>
       </eblc_index_sub_table_1>
     </strike>
   </CBLC>
 
+  <COLR>
+    <version value="0"/>
+    <ColorGlyph name="uni0000">
+      <layer colorID="0" name="c1"/>
+    </ColorGlyph>
+    <ColorGlyph name="uni0001">
+      <layer colorID="0" name="c2"/>
+    </ColorGlyph>
+    <ColorGlyph name="uniE900">
+      <layer colorID="0" name="c4"/>
+    </ColorGlyph>
+  </COLR>
 
+  <CPAL>
+    <version value="0"/>
+    <numPaletteEntries value="1"/>
+    <palette index="0">
+      <color index="0" value="#C80000FF"/>
+    </palette>
+  </CPAL>
+
+  <SVG>
+
+    <svgDoc endGlyphID="1" startGlyphID="1">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph1" transform="scale(1,-1)">
+<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
+</svg>]]>
+    </svgDoc>
+    <svgDoc endGlyphID="2" startGlyphID="9">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 0 0" id="glyph2" transform="scale(1,-1)">
+<path fill="#456789"  d="M0 0 L0 0 L0 0 L0 0 Z " />
+</svg>]]>
+    </svgDoc>
+    <svgDoc endGlyphID="10" startGlyphID="10">
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" enable-background="new 0 0 1024 1024" id="glyph10" transform="scale(1,-1)">
+<path fill="#320000"  d="M0 1024 L1024 1024 L1024 0 L0 0 L0 1024 L0 1024 Z " />
+</svg>]]>
+    </svgDoc>
+    <colorPalettes></colorPalettes>
+  </SVG>
+
+  <sbix>
+    <version value="1"/>
+    <flags value="00000000 00000001"/>
+    <strike>
+      <ppem value="300"/>
+      <resolution value="72"/>
+      <glyph name=".notdef"/>
+      <glyph graphicType="png " name="uni0000" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          00000001 00000001 08060000 001f15c4
+          89000000 0d494441 54089963 60606060
+          00000005 000187a1 4ed40000 00004945
+          4e44ae42 6082
+        </hexdata>
+      </glyph>
+      <glyph graphicType="png " name="uni0001" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          00000001 00000001 08060000 001f15c4
+          89000000 0d494441 54089963 60606060
+          00000005 000187a1 4ed40000 00004945
+          4e44ae42 6082
+        </hexdata>
+      </glyph>
+      <glyph name="c1"/>
+      <glyph name="c2"/>
+      <glyph name="c3"/>
+      <glyph name="c4"/>
+      <glyph name="uniE900"/>
+      <glyph graphicType="png " name="uniE901" originOffsetX="0" originOffsetY="0">
+        <hexdata>
+          89504e47 0d0a1a0a 0000000d 49484452
+          0000012c 0000012c 08030000 004ea37e
+          47000000 19744558 74536f66 74776172
+          65004164 6f626520 496d6167 65526561
+          647971c9 653c0000 0006504c 54459600
+          00000000 6e584c91 00000070 49444154
+          78daecc1 01010000 008220ff af6e4840
+          01000000 00000000 00000000 00000000
+          00000000 00000000 00000000 00000000
+          00000000 00000000 00000000 00000000
+          00000000 00000000 00000000 00000000
+          00000000 00000000 00000000 00000000
+          00000000 000000f0 6e020c00 60cb0001
+          38967a14 00000000 49454e44 ae426082
+        </hexdata>
+      </glyph>
+      <glyph name="uniE902"/>
+      <glyph name="uniE903"/>
+      <glyph name="uniE904"/>
+    </strike>
+  </sbix>
 
 </ttFont>
