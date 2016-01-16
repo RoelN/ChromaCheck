@@ -16,12 +16,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x545855cc"/>
+    <checkSumAdjustment value="0xd4b15922"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Sat Jan 16 19:09:15 2016"/>
+    <modified value="Sat Jan 16 19:24:23 2016"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -146,12 +146,6 @@
     </cmap_format_4>
   </cmap>
 
-  <cvt>
-    <cv index="0" value="21"/>
-    <cv index="1" value="0"/>
-    <cv index="2" value="0"/>
-  </cvt>
-
   <loca>
     <!-- The 'loca' table will be calculated by the compiler -->
   </loca>
@@ -197,53 +191,11 @@
   </glyf>
 
   <name>
-    <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      PixelAmbacht Color
-    </namerecord>
-    <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Regular
-    </namerecord>
-    <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      1.000;;PixelAmbacht-Color;2015;TR4-4.0.1.5095
-    </namerecord>
-    <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      PixelAmbacht Color
-    </namerecord>
-    <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.0
-    </namerecord>
-    <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      PixelAmbacht-Color
-    </namerecord>
-    <namerecord nameID="10" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Font to test color support.
-    </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-      PixelAmbacht Color
+      PixelambachtChromaTest
     </namerecord>
     <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
-      Regular
-    </namerecord>
-    <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      1.000;;PixelAmbacht-Color;2015;TR4-4.0.1.5095
-    </namerecord>
-    <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
-      PixelAmbacht Color
-    </namerecord>
-    <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.0
-    </namerecord>
-    <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
-      PixelAmbacht-Color
-    </namerecord>
-    <namerecord nameID="10" platformID="3" platEncID="1" langID="0x409">
-      Font to test color support.
-    </namerecord>
-    <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
-      Pixelambacht
-    </namerecord>
-    <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
-      Color
+      PixelambachtChromaTest
     </namerecord>
   </name>
 
@@ -258,12 +210,6 @@
     <minMemType1 value="0"/>
     <maxMemType1 value="0"/>
   </post>
-
-  <gasp>
-    <gaspRange rangeMaxPPEM="8" rangeGaspBehavior="10"/>
-    <gaspRange rangeMaxPPEM="14" rangeGaspBehavior="5"/>
-    <gaspRange rangeMaxPPEM="65535" rangeGaspBehavior="15"/>
-  </gasp>
 
   <CBDT>
     <header version="2.0"/>
