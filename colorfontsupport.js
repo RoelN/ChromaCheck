@@ -45,5 +45,3 @@ function clrtest() {
 window.onload = function() {
   clrtest();
 }
-
-
