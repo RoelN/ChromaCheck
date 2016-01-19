@@ -192,10 +192,10 @@
 
   <name>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-      PixelambachtChromaTest
+      PixelambachtChromaCheck
     </namerecord>
     <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
-      PixelambachtChromaTest
+      PixelambachtChromaCheck
     </namerecord>
   </name>
 

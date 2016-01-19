@@ -1,4 +1,4 @@
-function clrtest() {
+function chromaCheck() {
 
    try {
       var canvas = document.getElementById('svgCanvas'),
@@ -43,5 +43,5 @@ function clrtest() {
 }
 
 window.onload = function() {
-  clrtest();
+  chromaCheck();
 }
