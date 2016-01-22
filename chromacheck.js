@@ -1,5 +1,4 @@
-function chromaCheck() {
-
+(function(){
   var root = document.documentElement,
       cls  = 'chromacheck-';
 
@@ -53,8 +52,4 @@ function chromaCheck() {
     function chromaCheckFail() {
       root.className += ' '+cls+'failed';
     }
-}
-
-window.onload = function() {
-  chromaCheck();
-}
+})();

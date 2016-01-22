@@ -10,30 +10,29 @@
                 padding: 1em;
                 margin-bottom: 1em;
             }
-            div span {
-                font-weight: bold;
-            }
             .chromacheck-sbix .sbix,
             .chromacheck-colr .colr,
             .chromacheck-cbdt .cbdt,
             .chromacheck-svg .svg {
                 background: limegreen;
             }
-            .chromacheck-sbix .sbix span,
-            .chromacheck-colr .colr span,
-            .chromacheck-cbdt .cbdt span,
-            .chromacheck-svg .svg span {
+            .chromacheck-sbix .sbix strong,
+            .chromacheck-colr .colr strong,
+            .chromacheck-cbdt .cbdt strong,
+            .chromacheck-svg .svg strong {
                 display: none;
             }
         </style>
     </head>
 
     <body>
-        <h1>ChromaCheck</h1>
-        <div class="sbix">Apple SBIX is <span>not</span> supported</div>
-        <div class="colr">Microsoft COLR/CPAL is <span>not</span> supported</div>
-        <div class="svg">Adobe and Mozilla SVG-in-OpenType is <span>not</span> supported</div>
-        <div class="cbdt">Google CBDT/CBLC is <span>not</span> supported</div>
+        <h1>ChromaCheck by PixelAmbacht</h1>
+
+        <div class="sbix">Apple SBIX is <strong>not</strong> supported</div>
+        <div class="colr">Microsoft COLR/CPAL is <strong>not</strong> supported</div>
+        <div class="svg">Adobe and Mozilla SVG-in-OpenType is <strong>not</strong> supported</div>
+        <div class="cbdt">Google CBDT/CBLC is <strong>not</strong> supported</div>
+
         <script src="chromacheck.js"></script>
     </body>
 </html>
