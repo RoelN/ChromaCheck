@@ -25,7 +25,9 @@
     canvas.height = 100;
 
     img.onload = function() {
-      // Loop to give Safari time to load the font
+      checkFontLoad();
+
+      // Repeat the test to give Safari time to load the font
       loop = window.setInterval(checkFontLoad, 1);
     }
 
