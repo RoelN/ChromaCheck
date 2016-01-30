@@ -1,8 +1,6 @@
 /**
  * ChromaCheck, a feature test for color font support in browsers
- *
  * Author & copyright (c) 2016 Roel Nieskens, https://pixelambacht.nl
- *
  * Released under the MIT License. http://www.opensource.org/licenses/mit-license.php
  */
 (function(){
