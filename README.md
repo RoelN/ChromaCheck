@@ -1,6 +1,6 @@
 # ChromaCheck
 
-ChromaCheck is a feature test to check if browsers support one of the [color font formats](http://pixelambacht.nl/2014/multicolor-fonts/).
+ChromaCheck is a feature test to check if browsers support one of the four [color font formats](http://pixelambacht.nl/2014/multicolor-fonts/).
 
 ## How it works
 
