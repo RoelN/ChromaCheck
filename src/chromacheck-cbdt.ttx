@@ -4,23 +4,19 @@
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
     <GlyphID id="0" name=".notdef"/>
-    <GlyphID id="1" name="glyph00001"/>
-    <GlyphID id="2" name="uniE900"/>
-    <GlyphID id="3" name="uniE901"/>
-    <GlyphID id="4" name="uniE902"/>
-    <GlyphID id="5" name="uniE904"/>
+    <GlyphID id="1" name="uniE903"/>
   </GlyphOrder>
 
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xee676b7f"/>
+    <checkSumAdjustment value="0x56dee6e2"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Mon Apr 25 10:57:09 2016"/>
+    <modified value="Mon Apr 25 10:51:49 2016"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -55,7 +51,7 @@
   <maxp>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
-    <numGlyphs value="6"/>
+    <numGlyphs value="2"/>
     <maxPoints value="5"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>
@@ -108,8 +104,8 @@
     <ulUnicodeRange4 value="00000000 00000000 00000000 00000000"/>
     <achVendID value="    "/>
     <fsSelection value="00000000 11000000"/>
-    <usFirstCharIndex value="59648"/>
-    <usLastCharIndex value="59652"/>
+    <usFirstCharIndex value="59651"/>
+    <usLastCharIndex value="59651"/>
     <sTypoAscender value="1024"/>
     <sTypoDescender value="0"/>
     <sTypoLineGap value="0"/>
@@ -126,71 +122,22 @@
 
   <hmtx>
     <mtx name=".notdef" width="1024" lsb="0"/>
-    <mtx name="glyph00001" width="1024" lsb="0"/>
-    <mtx name="uniE900" width="1024" lsb="0"/>
-    <mtx name="uniE901" width="1024" lsb="0"/>
-    <mtx name="uniE902" width="1024" lsb="0"/>
-    <mtx name="uniE904" width="1024" lsb="0"/>
+    <mtx name="uniE903" width="1024" lsb="0"/>
   </hmtx>
 
   <cmap>
     <tableVersion version="0"/>
     <cmap_format_4 platformID="3" platEncID="1" language="0">
-      <map code="0xe900" name="uniE900"/><!-- ???? -->
-      <map code="0xe901" name="uniE901"/><!-- ???? -->
-      <map code="0xe902" name="uniE902"/><!-- ???? -->
-      <map code="0xe904" name="uniE904"/><!-- ???? -->
+      <map code="0xe903" name="uniE903"/><!-- ???? -->
     </cmap_format_4>
   </cmap>
 
-  <loca>
-    <!-- The 'loca' table will be calculated by the compiler -->
-  </loca>
-
-  <glyf>
-
-    <!-- The xMin, yMin, xMax and yMax values
-         will be recalculated by the compiler. -->
-
-    <TTGlyph name=".notdef"/><!-- contains no outline data -->
-
-    <TTGlyph name="glyph00001" xMin="0" yMin="0" xMax="1024" yMax="1024">
-      <contour>
-        <pt x="0" y="1024" on="1"/>
-        <pt x="1024" y="1024" on="1"/>
-        <pt x="1024" y="0" on="1"/>
-        <pt x="0" y="0" on="1"/>
-      </contour>
-      <instructions><assembly>
-        </assembly></instructions>
-    </TTGlyph>
-
-    <TTGlyph name="uniE900"/><!-- contains no outline data -->
-
-    <TTGlyph name="uniE901"/><!-- contains no outline data -->
-
-    <TTGlyph name="uniE902"/><!-- contains no outline data -->
-
-    <TTGlyph name="uniE904" xMin="0" yMin="0" xMax="1024" yMax="1024">
-      <contour>
-        <pt x="0" y="1024" on="1"/>
-        <pt x="1024" y="1024" on="1"/>
-        <pt x="1024" y="0" on="1"/>
-        <pt x="0" y="0" on="1"/>
-        <pt x="0" y="1024" on="1"/>
-      </contour>
-      <instructions><assembly>
-        </assembly></instructions>
-    </TTGlyph>
-
-  </glyf>
-
   <name>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-      PixelAmbacht ChromaCheck
+      PixelAmbacht ChromaCheck CBDT
     </namerecord>
     <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
-      PixelAmbacht ChromaCheck
+      PixelAmbacht ChromaCheck CBDT
     </namerecord>
   </name>
 
@@ -206,63 +153,75 @@
     <maxMemType1 value="0"/>
   </post>
 
-  <COLR>
-    <version value="0"/>
-    <ColorGlyph name="uniE900">
-      <layer colorID="0" name="glyph00001"/>
-    </ColorGlyph>
-  </COLR>
-
-  <CPAL>
-    <version value="0"/>
-    <numPaletteEntries value="1"/>
-    <palette index="0">
-      <color index="0" value="#C80000FF"/>
-    </palette>
-  </CPAL>
-
-  <SVG>
-    <svgDoc endGlyphID="4" startGlyphID="4">
-      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="glyph4">
-        <g transform="scale(1,-1)">
-          <path fill="#320000" d="M0 1024 L1024 1024 L1024 0 L0 0 L0 1024 L0 1024 Z" />
-        </g>
-      </svg>]]>
-    </svgDoc>
-    <colorPalettes></colorPalettes>
-  </SVG>
-
-  <sbix>
-    <version value="1"/>
-    <flags value="00000000 00000001"/>
-    <strike>
-      <ppem value="300"/>
-      <resolution value="72"/>
-      <glyph name=".notdef"/>
-      <glyph name="glyph00001"/>
-      <glyph name="uniE900"/>
-      <glyph graphicType="png " name="uniE901" originOffsetX="0" originOffsetY="0">
-        <hexdata>
+  <CBDT>
+    <header version="2.0"/>
+    <strikedata index="0">
+      <cbdt_bitmap_format_17 name="uniE903">
+        <SmallGlyphMetrics>
+          <height value="80"/>
+          <width value="80"/>
+          <BearingX value="0"/>
+          <BearingY value="80"/>
+          <Advance value="80"/>
+        </SmallGlyphMetrics>
+        <rawimagedata>
           89504e47 0d0a1a0a 0000000d 49484452
-          0000012c 0000012c 08030000 004ea37e
-          47000000 19744558 74536f66 74776172
-          65004164 6f626520 496d6167 65526561
-          647971c9 653c0000 0006504c 54459600
-          00000000 6e584c91 00000070 49444154
-          78daecc1 01010000 008220ff af6e4840
-          01000000 00000000 00000000 00000000
-          00000000 00000000 00000000 00000000
-          00000000 00000000 00000000 00000000
-          00000000 00000000 00000000 00000000
-          00000000 00000000 00000000 00000000
-          00000000 000000f0 6e020c00 60cb0001
-          38967a14 00000000 49454e44 ae426082
-        </hexdata>
-      </glyph>
-      <glyph name="uniE902"/>
-      <glyph name="uniE904"/>
+          00000050 00000050 01030000 00b4df60
+          ee000000 03504c54 45640000 e8a45e26
+          00000010 49444154 780163a0 1b1805a3
+          60140000 03700001 dc91ef93 00000000
+          49454e44 ae426082
+        </rawimagedata>
+      </cbdt_bitmap_format_17>
+    </strikedata>
+  </CBDT>
+
+  <CBLC>
+    <header version="2.0"/>
+    <strike index="0">
+      <bitmapSizeTable>
+        <sbitLineMetrics direction="hori">
+          <ascender value="80"/>
+          <descender value="0"/>
+          <widthMax value="80"/>
+          <caretSlopeNumerator value="0"/>
+          <caretSlopeDenominator value="0"/>
+          <caretOffset value="0"/>
+          <minOriginSB value="0"/>
+          <minAdvanceSB value="0"/>
+          <maxBeforeBL value="0"/>
+          <minAfterBL value="0"/>
+          <pad1 value="0"/>
+          <pad2 value="0"/>
+        </sbitLineMetrics>
+        <sbitLineMetrics direction="vert">
+          <ascender value="80"/>
+          <descender value="0"/>
+          <widthMax value="80"/>
+          <caretSlopeNumerator value="0"/>
+          <caretSlopeDenominator value="0"/>
+          <caretOffset value="0"/>
+          <minOriginSB value="0"/>
+          <minAdvanceSB value="0"/>
+          <maxBeforeBL value="0"/>
+          <minAfterBL value="0"/>
+          <pad1 value="0"/>
+          <pad2 value="0"/>
+        </sbitLineMetrics>
+        <colorRef value="0"/>
+        <startGlyphIndex value="1"/>
+        <endGlyphIndex value="1"/>
+        <ppemX value="80"/>
+        <ppemY value="80"/>
+        <bitDepth value="32"/>
+        <flags value="1"/>
+      </bitmapSizeTable>
+      <!-- GlyphIds are written but not read. The firstGlyphIndex and
+           lastGlyphIndex values will be recalculated by the compiler. -->
+      <eblc_index_sub_table_1 imageFormat="17" firstGlyphIndex="1" lastGlyphIndex="1">
+        <glyphLoc id="1" name="uniE903"/>
+      </eblc_index_sub_table_1>
     </strike>
-  </sbix>
+  </CBLC>
 
 </ttFont>
