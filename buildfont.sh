@@ -1,15 +1,14 @@
 #!/bin/bash
 
-ttx ./src/chromacheck.ttx
-ttx ./src/chromacheck-cbdt.ttx
-mv ./src/chromacheck.ttf .
-mv ./src/chromacheck-cbdt.ttf .
+ttx -b ./src/chromacheck*.ttx
 # sfnt2woff-zopfli compresses slightly better than ttx with zopfli
-sfnt2woff-zopfli chromacheck.ttf
-sfnt2woff-zopfli chromacheck-cbdt.ttf
-openssl base64 -A -in chromacheck.woff -out chromacheck.base64
-openssl base64 -A -in chromacheck-cbdt.woff -out chromacheck-cdbt.base64
-rm chromacheck.ttf
-rm chromacheck-cbdt.ttf
-rm chromacheck.woff
-rm chromacheck-cbdt.woff
+sfnt2woff-zopfli ./src/chromacheck-cbdt.ttf
+sfnt2woff-zopfli ./src/chromacheck-colr.ttf
+sfnt2woff-zopfli ./src/chromacheck-sbix.ttf
+sfnt2woff-zopfli ./src/chromacheck-svg.ttf
+openssl base64 -A -in ./src/chromacheck-cbdt.woff -out chromacheck-cdbt.base64
+openssl base64 -A -in ./src/chromacheck-colr.woff -out chromacheck-colr.base64
+openssl base64 -A -in ./src/chromacheck-sbix.woff -out chromacheck-sbix.base64
+openssl base64 -A -in ./src/chromacheck-svg.woff -out chromacheck-svg.base64
+rm ./src/chromacheck*.ttf
+rm ./src/chromacheck*.woff
