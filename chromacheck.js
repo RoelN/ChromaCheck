@@ -1,34 +1,19 @@
 /**
- * ChromaCheck 1.1
+ * ChromaCheck 1.11
  * @author Roel Nieskens, https://pixelambacht.nl
  * MIT license
  */
 (function(){
   var root = document.documentElement,
-      cls = 'chromacheck-',
-      runs = 20,
-      loop;
+      cls = 'chromacheck-';
 
-  // Stick SVG on canvas and check control glyph to see if font rendered
-  function checkFontLoad() {
-    context.drawImage(img, 0, 0);
-
-    if(context.getImageData(10, 10, 1, 1).data[0] === 0) {
-      clearInterval(loop);
-      colorGlyphTest();
-    } else if(--runs <= 0) {
-      clearInterval(loop);
-      checkFailed();
-    }
-  }
-
-  // Font loaded, now check for which color glyphs we see
+  // Canvas has been drawn, check for which color glyphs we see
   function colorGlyphTest() {
     var res = {};
-    res.cbdt = context.getImageData(10, 30, 1, 1).data[0] === 100; // CBDT/CBLC
-    res.svg  = context.getImageData(10, 50, 1, 1).data[0] === 50;  // SVG-in-OpenType
-    res.sbix = context.getImageData(10, 70, 1, 1).data[0] === 150; // SBIX
-    res.colr = context.getImageData(10, 90, 1, 1).data[0] === 200; // COLR/CPAL
+    res.cbdt = context.getImageData(10, 10, 1, 1).data[0] === 100; // CBDT/CBLC
+    res.colr = context.getImageData(10, 30, 1, 1).data[0] === 200; // COLR/CPAL
+    res.sbix = context.getImageData(10, 50, 1, 1).data[0] === 150; // SBIX
+    res.svg  = context.getImageData(10, 70, 1, 1).data[0] === 50;  // SVG-in-OpenType
 
     // Add class to HTML tag for each supported color format
     for (var key in res) {
@@ -38,42 +23,40 @@
     }
   }
 
-  // Font, SVG, or canvas failed
-  function checkFailed() {
-    root.className += ' '+cls+'failed';
-  }
-
+  // Draw color glyphs to a canvas through SVG
   try {
     var canvas = document.createElement('canvas'),
         context = canvas.getContext('2d'),
-        img = new Image()
-        font = 'd09GRgABAAAAAARMAA4AAAAABUwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDT0xSAAACrAAAABcAAAAYAAIAJkNQQUwAAALEAAAAEgAAABLJAAAQT1MvMgAAAawAAAA6AAAAYBfxJ05TVkcgAAAC2AAAANEAAAFI9kJ3MmNtYXAAAAH0AAAALgAAADTpG+k+Z2x5ZgAAAjQAAAAmAAAAODNTND5oZWFkAAABRAAAAC8AAAA2CRHx7GhoZWEAAAF0AAAAFQAAACQIAQQCaG10eAAAAegAAAALAAAADgQAAABsb2NhAAACJAAAAA4AAAAOADYAGm1heHAAAAGMAAAAHQAAACACEgAebmFtZQAAAlwAAABDAAAATgSgDQdwb3N0AAACoAAAAAwAAAAgAAMAAHNiaXgAAAOsAAAAngAAARQlRrNFeAFjYGRgAOF3mWnn4/ltvjJIszCAwKUFTAIg+rLzqvsgmoUBLM7BwASiABocCIIAeAFjYGRgYGEAAjgJFEEFjAABkQAQAAAAeAFjYGRgYGBjYAXTDFCSi4GBiYFBAsQEAAJ8ADMAAAB4AWNgYWFgnMDAysDANJPpDAMDQz+EZnzNYMzIyYAKGAWQOApAwHDgJcNLoAkgACTRgQIDAwAATgh4AAB4AWNhQAYAAEYABQB4ARXFsQGAIAwAsABtJ3de8P+v+oSiWYJhGbiEGyUMs2fH+9L+99zDAA6gHAgnAAAAAAAAAA0ADQANAA0AHAAAeAFjYGQAAhYgZGBmYBBUFFRkYfjDAMJIMiwQGUGoFIgPAGvzBPcAAHgBLcZVAYQAAECxd4aEQCIQASlABNzd26P3tQFvVD68vjIvDPj/fd8lZyOmwqImwCckY0LHOR1oqfHvx4SUBwCGCbAAeAFjYGbACwAAfQAEeAFjYGBgBGI+IBYBsphAfJAIAAJEACkAAAAAAQABAAEAAAAOAAAAAMj/AAB4AW0PhU5DMfCREEG/4XK49opbtyixEcOJzfsaKm++9/dUcDh3yQLMRzmTzXrMsmVv0lV1ajSMO/2BclYg3yeEjm25trJS4P3d9d4ZVivzEOFqMJbg6+1AYD4cFheMTSaT/cnhvutLdkBEzFdgKrmYamVf/yvk5+fnLGbx+2aOoNoCpS6L/AjjzrRVwrDfsIOu6xuBg1ZDdzb57h7f+lbjq4rGMIeu0lrgyuEBeUDw424IOB0cQS3KbyZBjZKI7od+QWDfdjP5+Xz4rfIGMJ9QpgAAAHgBY2AEQgYw5mHUYfAA0gqomJEDjoGgIC9doTPAz52XS4oLyOX19HAJAsrpgDAHM1DEb3GdO5CSLHGNKAnOTyspTyxKZXBMyU9KVfDMTUxPDUpNTKksPJlqA1TEFuAT4jqNAQTyInwmgoz3dHEMqbj15iAjyEVNCv/X53k4AJm0AB/ymHgYEk4zMFpMqxIBCXi6+rmsc0poAgDaiyZIAAA=',
-        fontCBDT = 'd09GRgABAAAAAAKoAAoAAAAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQkRUAAACGAAAAGAAAABlKWauy0NCTEMAAAJ4AAAALQAAAFDwVcDTT1MvMgAAAVgAAAA6AAAAYBf0J01jbWFwAAABnAAAACcAAAAsAAzpNmhlYWQAAAD0AAAALwAAADYJEe9yaGhlYQAAASQAAAAVAAAAJAgBBAJobXR4AAABlAAAAAYAAAAGBAAAAG1heHAAAAE8AAAAGwAAACACDgAebmFtZQAAAcQAAABHAAAAWAUnDdFwb3N0AAACDAAAAAwAAAAgAAMAAHgBY2BkYADhsHtPFsXz23xlkGZhAIFLC5gEQPRl5xWpIJqFASzOwcAEogAYQAg0AHgBY2BkYGBhAAI4CRRBBYwAAZEAEAAAAHgBY2BkYGBgYmAF0wxQkgskxCABYgIAAhAALwB4AWNgYWFgnMDAysDANJPpDAMDQz+EZnzNYMzIyYAKGAWQOApAwHDgJfNLZhYwH0iiAwUGBgAAjgh6AAAEAAAAAAAAAHgBY2BgYGRgBmIGBh4GFgYFIM0ChED+S+b//yGk2D+wPAMAXIMHKAB4AR3ItQHCABRAwcNhCGQOKqxHB8DdffsEfvUEWTU5mXxFRhPhsuEDO18rR20nczMLW08NXVt3Fyez8JWFQ/yOnkkKbAELAQB4AWNgZsALAAB9AAR4AWNgYmAICAAhBoaIzgA/d14uKS4gm9fTwyUISAeAMCMzkNxyP+EdkGIO8AlxTWFgeLEkTg3IFfB0cQypYExeIC3BujhBBChfwMB4Z+L7yQxA4Onq57LOKaEJAK3VFft4AWNgYgABRiC2AGIJKJshAAhhAMEGyzIGBCgASbA6DiApCKRZoLKJAGrOAtkAAAA=',
-        svg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="100" style="background:#fff">'+
+        img = new Image(),
+        fontSBIX = 'd09GRgABAAAAAALsAAsAAAAAA2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABcAAAADoAAABgF/InTmNtYXAAAAG0AAAALgAAADTpGek7Z2x5ZgAAAewAAAAUAAAAFAgBOQJoZWFkAAABCAAAAC8AAAA2CShiw2hoZWEAAAE4AAAAFQAAACQIAQQCaG10eAAAAawAAAAIAAAACAQAAABsb2NhAAAB5AAAAAgAAAAIAAAACm1heHAAAAFQAAAAHQAAACACDwAebmFtZQAAAgAAAABDAAAATgSgDQdwb3N0AAACRAAAAAwAAAAgAAMAAHNiaXgAAAJQAAAAnAAAAQglRrHNeAFjYGRgAOG51wJex/PbfGWQZmEAgUsLmARA9OUo6W0gmoUBLM7BwASiABNPCAMAeAFjYGRgYGEAAjgJFEEFjAABkQAQAAAAeAFjYGRgYGBmYAXTDFCSi4GBiYFBAsQEAAIrADAAAAB4AWNgYWFgnMDAysDANJPpDAMDQz+EZnzNYMzIyYAKGAWQOApAwHDgJeNLoAkgACTRgQIDAwAAbQh5AAAEAAAAAAAAAHgBJcU5AYBADACw3NNOzGAB/64qgp8sQTM0LKYdaWp6tZrXxf9mPTXgBqjZCSEAAAAAAAAAAAAKAAEAAAAABAAEAAABAAAxAQQABAB4AS3GVQGEAABAsXeGhEAiEAEpQATc3duj97UBb1Q+vL4yLwz4/33fJWcjpsKiJsAnJGNCxzkdaKnx78eElAcAhgmwAHgBY2BmwAsAAH0ABHgBY2AEQgYw5mHUYfAA0iJQ/AeKGQry0hU6A/zcebmkuIBcXk8PlyCgFh0Q5mAGivgtrnMHUpIlrhElwflpJeWJRakMjin5SakKnrmJ6alBqYkplYUnU22AitgCfEJcpzGAQF6Ez0SQ8Z4ujiEVt94cZAS5oknh//o8DwcgkxbgQx4TD0PCaQZGi2lVIiABT1c/l3VOCU0AMosnzQ==',
+        fontCBDT = 'd09GRgABAAAAAALgAAwAAAAAAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQkRUAAACUAAAAGAAAABlKWauy0NCTEMAAAKwAAAALQAAAFDwVcDTT1MvMgAAAYQAAAA6AAAAYBf0J05jbWFwAAAByAAAACgAAAAsAAzpN2dseWYAAAH4AAAAFAAAABQIATkCaGVhZAAAARwAAAAvAAAANgkoZCloaGVhAAABTAAAABUAAAAkCAEEAmhtdHgAAAHAAAAACAAAAAgEAAAAbG9jYQAAAfAAAAAIAAAACAAAAAptYXhwAAABZAAAAB0AAAAgAg8AHm5hbWUAAAIMAAAAOAAAAD4C3AsWcG9zdAAAAkQAAAAMAAAAIAADAAB4AWNgZGAA4fLUNdXx/DZfGaRZGEDg0gImARB9OUpWBkSzMIDFORiYQBQA6kkGwAB4AWNgZGBgYQACOAkUQQWMAAGRABAAAAB4AWNgZGBgYGZgBdMMUJKLgYGJgUECxAQAAisAMAAAAHgBY2BhYWCcwMDKwMA0k+kMAwNDP4RmfM1gzMjJgAoYBZA4CkDAcOAl80ugCSAAJNGBAgMDAACrCHsAAAQAAAAAAAAAeAEFwbEBwCAIALAAjJ2d+/9nHqGYIJTAp/1oLdg9w66ZdQU8XJQHKQAAAAAAAAAKAAEAAAAABAAEAAABAAAxAQQABAB4AWNgYGBikGNgZmBk4WRgZFAA8iFsJjDbmSGDoYghnyGXIRHMTmVIZshmUACynRhcGEIAdYgF+3gBY2BmwAsAAH0ABHgBY2BiYAgIACEGhojOAD93Xi4pLiCb19PDJQhIB4AwIzOQ3HI/4R2QYg7wCXFNYWB4sSRODcgV8HRxDKlgTF4gLcG6OEEEKF/AwHhn4vvJDEDg6ernss4poQkArdUV+3gBY2BiAAFGILYAYgkomyEACGEAwQbLMgYEKABJsDoOICkIpFmgsokAas4C2QAAAA==',
+        fontCOLR = 'd09GRgABAAAAAAKEAAwAAAAAAowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDT0xSAAACWAAAABcAAAAYAAIAJkNQQUwAAAJwAAAAEgAAABLJAAAQT1MvMgAAAYQAAAA6AAAAYBfxJ0pjbWFwAAAByAAAACcAAAAsAA3pM2dseWYAAAH4AAAAGgAAABoNIh0kaGVhZAAAARwAAAAvAAAANgkmO6hoaGVhAAABTAAAABUAAAAkCAEEAmhtdHgAAAHAAAAACAAAAAgEAAAAbG9jYQAAAfAAAAAIAAAACAANAA1tYXhwAAABZAAAAB0AAAAgAg8AHW5hbWUAAAIUAAAAOAAAAD4C5wsecG9zdAAAAkwAAAAMAAAAIAADAAB4AWNgZGAAYb4w8c3x/DZfGaRZGEDg0gImARB9OfzLbBDNwgAW52BgAlEA3o4HPgB4AWNgZGBgYQACOAkUQQWMAAGRABAAAAB4AWNgZGBgYGZgAdMMUJKLgYGJgUECxAQAAhIALwAAAHgBY2BhYWCcwMDKwMA0k+kMAwNDP4RmfM1gzMjJgAoYBZA4CkDAcOAlw0sGFhAXSGIABQYGAP/LCHQAAAQAAAAAAAAAeAFjYGBgZGAGYgYGHgYWBgUgzQKEQP5Lhv//IaQ4E1ieAQBVUwYnAAAAAAAADQANAAEAAAAABAAEAAADAAARIREhBAD8AAQA/AAAAHgBLcYFDYAAAADBxyEE0oU5TgLcvf+G3+wAEQsJQTYQcOC/+N6l42BlJn9fUzLi3I/wSS913wYOeAFjYGbACwAAfQAEeAFjYGBgBGI+IBYBsphAfJAIAAJEACkAAAAAAQABAAEAAAAOAAAAAMj/AAA=',
+        fontSVG  = 'd09GRgABAAAAAAMMAAsAAAAAA5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABaAAAADoAAABgF/MnTlNWRyAAAAI8AAAAzQAAAUj2P3csY21hcAAAAawAAAAtAAAANOkY6T1nbHlmAAAB5AAAABQAAAAUCAE5AmhlYWQAAAEIAAAALAAAADYFKF8baGhlYQAAATQAAAAXAAAAJAQBBAJobXR4AAABpAAAAAgAAAAIBAAAAGxvY2EAAAHcAAAACAAAAAgAAAAKbWF4cAAAAUwAAAAcAAAAIAIOABluYW1lAAAB+AAAADcAAAA8ApwLJXBvc3QAAAIwAAAADAAAACAAAwAAeAFjYGRgAGH9X59nxvPbfGWQZmEAgUsLmARA9OUoGT4GBOBgYAJRAAdRB1t4AWNgZGBgYQACIAkFjFAazgcAAUEADAB4AWNgZGBgYGaAAUYwycXAwMTAIAFiAgABlwAqeAFjYGFhYJzAwMrAwDST6QwDA0M/hGZ8zWDMyMmAChgFkDgKQMBw4CXTS6AJIAAk0YECAwMAAIwIegAABAAAAAAAAAB4ASXFOQGAQAwAsNzXibka8O+qIvjJEjRDw2baEaamV695XfznlacG3LPsCiEAAAAAAAAAAAAACgABAAAAAAQABAAAAQAAMQEEAAQAeAFjYGBgYpBjYGZgZOFkYASyGKBsJjDbmSGDoYghnyGXIRHMTmVIZshmUGAIZghjcAcAadkFygB4AWNgZsALAAB9AAR4AW0PhU5DMRDi6DdcDtdecesWJTZiOLF5X0Ptzff3VHA4d5mJMJ/kbMSgl4NJV9WJ0TDq9PrKWYF8nxA6tuXaykqB93fXe2dYrcxDgqv+SEKot32BxWDgLxgbj8f748N915PsgIhYqMBccjHRyr7+V8jPz89ZyuL3zRxBtQVKPfUFx7Qzb5Uw6DVsv+t6RmC/1dCdTb67x7e+1YQq3xgU0FVaC1w5PKAACGHcDQGngyOoJfnNJKhRFsn90C8I7NtuJj+fj79V3gAneFCdAAAA',
+        svg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="80" style="background:#fff">'+
               '<style type="text/css">'+
-              '@font-face{font-family:"chromacheck";src:url(data:application/x-font-woff;base64,'+font+') format("woff");}'+
               '@font-face{font-family:"chromacheck-cbdt";src:url(data:application/x-font-woff;base64,'+fontCBDT+') format("woff");}'+
+              '@font-face{font-family:"chromacheck-colr";src:url(data:application/x-font-woff;base64,'+fontCOLR+') format("woff");}'+
+              '@font-face{font-family:"chromacheck-sbix";src:url(data:application/x-font-woff;base64,'+fontSBIX+') format("woff");}'+
+              '@font-face{font-family:"chromacheck-svg";src:url(data:application/x-font-woff;base64,'+fontSVG+') format("woff");}'+
               '</style>'+
-              '<text x="0" y="20" fill="#000" font-family="chromacheck" font-size="20">&#xe904;'+ // Control glyph
+              '<text x="0" y="0" font-size="20">'+
               '<tspan font-family="chromacheck-cbdt" x="0" dy="20">&#xe903;</tspan>'+ // CBDT/CBLC
-              '<tspan x="0" dy="20">&#xe902;</tspan>'+ // SVG
-              '<tspan x="0" dy="20">&#xe901;</tspan>'+ // SBIX
-              '<tspan x="0" dy="20">&#xe900;</tspan>'+ // COLR
+              '<tspan font-family="chromacheck-colr" x="0" dy="20">&#xe900;</tspan>'+ // COLR
+              '<tspan font-family="chromacheck-sbix" x="0" dy="20">&#xe901;</tspan>'+ // SBIX
+              '<tspan font-family="chromacheck-svg" x="0" dy="20">&#xe902;</tspan>'+ // SVG
               '</text>'+
               '</svg>';
-    canvas.width  = 20;
-    canvas.height = 100;
 
     img.onload = function() {
-      checkFontLoad();
-
-      // Repeat the test to give Safari time to load the font
-      loop = window.setInterval(checkFontLoad, 1);
+      canvas.width  = 20;
+      canvas.height = 80;
+      context.drawImage(img, 0, 0);
+      colorGlyphTest();
     }
 
     img.src = 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
   }
   catch (ex) {
-    checkFailed();
+    root.className += ' '+cls+'failed';
   }
 })();
