@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ttx -b ./src/chromacheck*.ttx
+ttx ./src/chromacheck*.ttx
 # sfnt2woff-zopfli compresses slightly better than ttx with zopfli
 sfnt2woff-zopfli ./src/chromacheck-cbdt.ttf
 sfnt2woff-zopfli ./src/chromacheck-colr.ttf
