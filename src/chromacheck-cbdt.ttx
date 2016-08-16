@@ -5,7 +5,6 @@
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
     <GlyphID id="0" name=".notdef"/>
     <GlyphID id="1" name="uniE903"/>
-    <GlyphID id="2" name="uniE904"/>
   </GlyphOrder>
 
   <head>
@@ -124,40 +123,14 @@
   <hmtx>
     <mtx name=".notdef" width="1024" lsb="0"/>
     <mtx name="uniE903" width="1024" lsb="0"/>
-    <mtx name="uniE904" width="1024" lsb="0"/>
   </hmtx>
 
   <cmap>
     <tableVersion version="0"/>
     <cmap_format_4 platformID="3" platEncID="1" language="0">
       <map code="0xe903" name="uniE903"/><!-- ???? -->
-      <map code="0xe904" name="uniE904"/><!-- ???? -->
     </cmap_format_4>
   </cmap>
-
-  <loca>
-    <!-- The 'loca' table will be calculated by the compiler -->
-  </loca>
-
-  <glyf>
-
-    <!-- The xMin, yMin, xMax and yMax values
-         will be recalculated by the compiler. -->
-
-    <TTGlyph name=".notdef"/><!-- contains no outline data -->
-
-    <TTGlyph name="uniE903"/><!-- contains no outline data -->
-
-    <TTGlyph name="uniE904" xMin="0" yMin="0" xMax="1024" yMax="1024">
-      <contour>
-        <pt x="0" y="0" on="1"/>
-        <pt x="1024" y="1024" on="1"/>
-      </contour>
-      <instructions><assembly>
-        </assembly></instructions>
-    </TTGlyph>
-
-  </glyf>
 
   <name>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
@@ -197,7 +170,7 @@
           ee000000 03504c54 45640000 e8a45e26
           00000010 49444154 780163a0 1b1805a3
           60140000 03700001 dc91ef93 00000000
-          49454e44 ae426082  
+          49454e44 ae426082
         </rawimagedata>
       </cbdt_bitmap_format_17>
     </strikedata>
