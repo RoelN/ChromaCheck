@@ -11,4 +11,4 @@ openssl base64 -A -in ./src/chromacheck-colr.woff -out chromacheck-colr.base64
 openssl base64 -A -in ./src/chromacheck-sbix.woff -out chromacheck-sbix.base64
 openssl base64 -A -in ./src/chromacheck-svg.woff -out chromacheck-svg.base64
 rm ./src/chromacheck*.ttf
-rm ./src/chromacheck*.woff
+mv ./src/chromacheck*.woff ./fonts/
