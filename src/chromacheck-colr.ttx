@@ -156,7 +156,16 @@
         </assembly></instructions>
     </TTGlyph>
 
-    <TTGlyph name="uniE900"/><!-- contains no outline data -->
+    <TTGlyph name="uniE900" xMin="0" yMin="0" xMax="1024" yMax="1024">
+      <contour>
+        <pt x="0" y="1024" on="1"/>
+        <pt x="1024" y="1024" on="1"/>
+        <pt x="1024" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions><assembly>
+        </assembly></instructions>
+    </TTGlyph>
 
   </glyf>
 
