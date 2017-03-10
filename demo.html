@@ -5,7 +5,7 @@
         <title>ChromaCheck by PixelAmbacht</title>
         <style>
             div {
-                background: orangered;
+                background: light-coral;
                 color: white;
                 padding: 1em;
                 margin-bottom: 1em;
@@ -14,7 +14,8 @@
             .chromacheck-colr .colr,
             .chromacheck-cbdt .cbdt,
             .chromacheck-svg .svg {
-                background: limegreen;
+                background: light-green;
+                color: black;
             }
             .chromacheck-sbix .sbix strong,
             .chromacheck-colr .colr strong,
@@ -22,16 +23,22 @@
             .chromacheck-svg .svg strong {
                 display: none;
             }
+            .chromacheck-sbix .sbix::after,
+            .chromacheck-colr .colr::after,
+            .chromacheck-cbdt .cbdt::after,
+            .chromacheck-svg .svg::after {
+                content: "\2705";
+            }
         </style>
     </head>
 
     <body>
         <h1>ChromaCheck by PixelAmbacht</h1>
 
-        <div class="sbix">Apple SBIX is <strong>not</strong> supported</div>
-        <div class="colr">COLR/CPAL is <strong>not</strong> supported</div>
-        <div class="svg">SVG-in-OpenType is <strong>not</strong> supported</div>
-        <div class="cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
+        <div class="colr">Microsoft colored TTF/sfnt glyphs (<a href="https://www.microsoft.com/typography/otspec/colr.htm"><code>COLR</code></a>/<code>CPAL</code></a> tables, OpenType 1.7+) is <strong>not</strong> supported</div>
+        <div class="svg">Adobe/Mozilla/W3C SVG-in-OpenType (<a href="https://www.microsoft.com/typography/otspec/svg.htm"><code>SVG&nbsp;</code> table</a>, OpenType 1.7+) is <strong>not</strong> supported</div>
+        <div class="cbdt">Google PNG-in-Open (<a href="https://www.microsoft.com/typography/otspec/cbdt.htm"><code>CBDT</code></a>/<a href="https://www.microsoft.com/typography/otspec/cblc.htm"><code>CBLC</code></a> tables, OpenType 1.7+) is <strong>not</strong> supported</div>
+        <div class="sbix">Apple PNG-in-Open (<a href="https://www.microsoft.com/typography/otspec/sbix.htm"><code>sbix</code> table</a>, OpenType 1.8+) is <strong>not</strong> supported</div>
 
         <p>ChromaCheck checks which <a href="https://pixelambacht.nl/2014/multicolor-fonts/">OpenType
         color formats</a> are supported in this browser.
