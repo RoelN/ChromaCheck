@@ -192,12 +192,7 @@
   <SVG>
 
     <svgDoc endGlyphID="1" startGlyphID="1">
-      <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-      <svg xmlns="http://www.w3.org/2000/svg" id="glyph1">
-        <g transform="scale(1,-1)">
-          <path fill="#320000" d="M0 1024 L1024 1024 L1024 0 L0 0 L0 1024 L0 1024 Z" />
-        </g>
-      </svg>]]>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="glyph1"><path fill="#320000" d="M0-1024h1024V0H0v-1024z"/></svg>]]>
     </svgDoc>
   </SVG>
 
