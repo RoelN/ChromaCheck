@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.0">
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.21">
 
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
     <GlyphID id="0" name=".notdef"/>
-    <GlyphID id="1" name="glyph00001"/>
     <GlyphID id="2" name="uniE900"/>
   </GlyphOrder>
 
@@ -12,12 +11,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xe5617b3"/>
+    <checkSumAdjustment value="0xcdbf183d"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Tue May 10 20:27:07 2016"/>
+    <modified value="Thu Jan 11 19:09:30 2018"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -30,7 +29,7 @@
   </head>
 
   <hhea>
-    <tableVersion value="1.0"/>
+    <tableVersion value="0x00010000"/>
     <ascent value="1024"/>
     <descent value="0"/>
     <lineGap value="0"/>
@@ -123,7 +122,6 @@
 
   <hmtx>
     <mtx name=".notdef" width="1024" lsb="0"/>
-    <mtx name="glyph00001" width="1024" lsb="0"/>
     <mtx name="uniE900" width="1024" lsb="0"/>
   </hmtx>
 
@@ -145,17 +143,6 @@
 
     <TTGlyph name=".notdef"/><!-- contains no outline data -->
 
-    <TTGlyph name="glyph00001" xMin="0" yMin="0" xMax="1024" yMax="1024">
-      <contour>
-        <pt x="0" y="1024" on="1"/>
-        <pt x="1024" y="1024" on="1"/>
-        <pt x="1024" y="0" on="1"/>
-        <pt x="0" y="0" on="1"/>
-      </contour>
-      <instructions><assembly>
-        </assembly></instructions>
-    </TTGlyph>
-
     <TTGlyph name="uniE900" xMin="0" yMin="0" xMax="1024" yMax="1024">
       <contour>
         <pt x="0" y="1024" on="1"/>
@@ -163,8 +150,7 @@
         <pt x="1024" y="0" on="1"/>
         <pt x="0" y="0" on="1"/>
       </contour>
-      <instructions><assembly>
-        </assembly></instructions>
+      <instructions/>
     </TTGlyph>
 
   </glyf>
@@ -193,7 +179,7 @@
   <COLR>
     <version value="0"/>
     <ColorGlyph name="uniE900">
-      <layer colorID="0" name="glyph00001"/>
+      <layer colorID="0" name="uniE900"/>
     </ColorGlyph>
   </COLR>
 

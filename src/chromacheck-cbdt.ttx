@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.0">
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.21">
 
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
@@ -11,12 +11,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x7765ac7b"/>
+    <checkSumAdjustment value="0x66c53901"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Thu May 12 11:44:28 2016"/>
+    <modified value="Thu Jan 11 19:59:47 2018"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -29,7 +29,7 @@
   </head>
 
   <hhea>
-    <tableVersion value="1.0"/>
+    <tableVersion value="0x00010000"/>
     <ascent value="1024"/>
     <descent value="0"/>
     <lineGap value="0"/>
@@ -51,8 +51,8 @@
   <maxp>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
-    <numGlyphs value="3"/>
-    <maxPoints value="5"/>
+    <numGlyphs value="2"/>
+    <maxPoints value="4"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
@@ -105,7 +105,7 @@
     <achVendID value="    "/>
     <fsSelection value="00000000 11000000"/>
     <usFirstCharIndex value="59651"/>
-    <usLastCharIndex value="59652"/>
+    <usLastCharIndex value="59651"/>
     <sTypoAscender value="1024"/>
     <sTypoDescender value="0"/>
     <sTypoLineGap value="0"/>
@@ -131,6 +131,29 @@
       <map code="0xe903" name="uniE903"/><!-- ???? -->
     </cmap_format_4>
   </cmap>
+
+  <loca>
+    <!-- The 'loca' table will be calculated by the compiler -->
+  </loca>
+
+  <glyf>
+
+    <!-- The xMin, yMin, xMax and yMax values
+         will be recalculated by the compiler. -->
+
+    <TTGlyph name=".notdef"/><!-- contains no outline data -->
+
+    <TTGlyph name="uniE903" xMin="0" yMin="0" xMax="1024" yMax="1024">
+      <contour>
+        <pt x="0" y="1024" on="1"/>
+        <pt x="1024" y="1024" on="1"/>
+        <pt x="1024" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions/>
+    </TTGlyph>
+
+  </glyf>
 
   <name>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">

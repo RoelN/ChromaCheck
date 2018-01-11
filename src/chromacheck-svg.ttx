@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.0">
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.21">
 
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
@@ -12,16 +12,16 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x2ffaf399"/>
+    <checkSumAdjustment value="0xfb807b41"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Thu May 12 11:39:58 2016"/>
+    <modified value="Thu Jan 11 19:09:30 2018"/>
     <xMin value="0"/>
     <yMin value="0"/>
-    <xMax value="0"/>
-    <yMax value="0"/>
+    <xMax value="1024"/>
+    <yMax value="1024"/>
     <macStyle value="00000000 00000000"/>
     <lowestRecPPEM value="8"/>
     <fontDirectionHint value="2"/>
@@ -30,14 +30,14 @@
   </head>
 
   <hhea>
-    <tableVersion value="1.0"/>
+    <tableVersion value="0x00010000"/>
     <ascent value="1024"/>
     <descent value="0"/>
     <lineGap value="0"/>
     <advanceWidthMax value="1024"/>
     <minLeftSideBearing value="0"/>
     <minRightSideBearing value="0"/>
-    <xMaxExtent value="0"/>
+    <xMaxExtent value="1024"/>
     <caretSlopeRise value="1"/>
     <caretSlopeRun value="0"/>
     <caretOffset value="0"/>
@@ -53,8 +53,8 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
     <numGlyphs value="3"/>
-    <maxPoints value="0"/>
-    <maxContours value="0"/>
+    <maxPoints value="5"/>
+    <maxContours value="1"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
     <maxZones value="1"/>
@@ -156,8 +156,7 @@
         <pt x="0" y="0" on="1"/>
         <pt x="0" y="1024" on="1"/>
       </contour>
-      <instructions><assembly>
-        </assembly></instructions>
+      <instructions/>
     </TTGlyph>
 
   </glyf>
@@ -193,7 +192,6 @@
         </g>
       </svg>]]>
     </svgDoc>
-    <colorPalettes></colorPalettes>
   </SVG>
 
 </ttFont>
