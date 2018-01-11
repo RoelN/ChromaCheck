@@ -4,19 +4,19 @@
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
     <GlyphID id="0" name=".notdef"/>
-    <GlyphID id="2" name="uniE900"/>
+    <GlyphID id="1" name="uniE900"/>
   </GlyphOrder>
 
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xcdbf183d"/>
+    <checkSumAdjustment value="0x80f1a55"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Thu Jan 11 19:09:30 2018"/>
+    <modified value="Thu Jan 11 20:02:34 2018"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -51,7 +51,7 @@
   <maxp>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
-    <numGlyphs value="3"/>
+    <numGlyphs value="2"/>
     <maxPoints value="4"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>

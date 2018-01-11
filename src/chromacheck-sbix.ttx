@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.0">
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.21">
 
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
     <GlyphID id="0" name=".notdef"/>
     <GlyphID id="1" name="uniE901"/>
-    <GlyphID id="2" name="uniE904"/>
   </GlyphOrder>
 
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x9dd650eb"/>
+    <checkSumAdjustment value="0x5f4fc1db"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Thu May 12 11:38:30 2016"/>
+    <modified value="Thu Jan 11 20:57:42 2018"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -30,7 +29,7 @@
   </head>
 
   <hhea>
-    <tableVersion value="1.0"/>
+    <tableVersion value="0x00010000"/>
     <ascent value="1024"/>
     <descent value="0"/>
     <lineGap value="0"/>
@@ -52,8 +51,8 @@
   <maxp>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
-    <numGlyphs value="3"/>
-    <maxPoints value="5"/>
+    <numGlyphs value="2"/>
+    <maxPoints value="4"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
@@ -106,7 +105,7 @@
     <achVendID value="    "/>
     <fsSelection value="00000000 11000000"/>
     <usFirstCharIndex value="59649"/>
-    <usLastCharIndex value="59652"/>
+    <usLastCharIndex value="59649"/>
     <sTypoAscender value="1024"/>
     <sTypoDescender value="0"/>
     <sTypoLineGap value="0"/>
@@ -124,14 +123,12 @@
   <hmtx>
     <mtx name=".notdef" width="1024" lsb="0"/>
     <mtx name="uniE901" width="1024" lsb="0"/>
-    <mtx name="uniE904" width="1024" lsb="0"/>
   </hmtx>
 
   <cmap>
     <tableVersion version="0"/>
     <cmap_format_4 platformID="3" platEncID="1" language="0">
       <map code="0xe901" name="uniE901"/><!-- ???? -->
-      <map code="0xe904" name="uniE904"/><!-- ???? -->
     </cmap_format_4>
   </cmap>
 
@@ -146,15 +143,14 @@
 
     <TTGlyph name=".notdef"/><!-- contains no outline data -->
 
-    <TTGlyph name="uniE901"/><!-- contains no outline data -->
-
-    <TTGlyph name="uniE904" xMin="0" yMin="0" xMax="1024" yMax="1024">
+    <TTGlyph name="uniE901" xMin="0" yMin="0" xMax="1024" yMax="1024">
       <contour>
-        <pt x="0" y="0" on="1"/>
+        <pt x="0" y="1024" on="1"/>
         <pt x="1024" y="1024" on="1"/>
+        <pt x="1024" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
       </contour>
-      <instructions><assembly>
-        </assembly></instructions>
+      <instructions/>
     </TTGlyph>
 
   </glyf>
@@ -205,7 +201,6 @@
           38967a14 00000000 49454e44 ae426082
         </hexdata>
       </glyph>
-      <glyph name="uniE904"/>
     </strike>
   </sbix>
 

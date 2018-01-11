@@ -12,12 +12,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xfb807b41"/>
+    <checkSumAdjustment value="0x2b1ae5a6"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00011011"/>
     <unitsPerEm value="1024"/>
     <created value="Wed Dec 23 07:47:28 2015"/>
-    <modified value="Thu Jan 11 19:09:30 2018"/>
+    <modified value="Thu Jan 11 21:14:08 2018"/>
     <xMin value="0"/>
     <yMin value="0"/>
     <xMax value="1024"/>
@@ -53,7 +53,7 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
     <numGlyphs value="3"/>
-    <maxPoints value="5"/>
+    <maxPoints value="4"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
@@ -146,7 +146,15 @@
 
     <TTGlyph name=".notdef"/><!-- contains no outline data -->
 
-    <TTGlyph name="uniE902"/><!-- contains no outline data -->
+    <TTGlyph name="uniE902" xMin="0" yMin="0" xMax="1024" yMax="1024">
+      <contour>
+        <pt x="0" y="1024" on="1"/>
+        <pt x="1024" y="1024" on="1"/>
+        <pt x="1024" y="0" on="1"/>
+        <pt x="0" y="0" on="1"/>
+      </contour>
+      <instructions/>
+    </TTGlyph>
 
     <TTGlyph name="uniE904" xMin="0" yMin="0" xMax="1024" yMax="1024">
       <contour>
@@ -154,7 +162,6 @@
         <pt x="1024" y="1024" on="1"/>
         <pt x="1024" y="0" on="1"/>
         <pt x="0" y="0" on="1"/>
-        <pt x="0" y="1024" on="1"/>
       </contour>
       <instructions/>
     </TTGlyph>
@@ -186,7 +193,7 @@
 
     <svgDoc endGlyphID="1" startGlyphID="1">
       <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="glyph1">
+      <svg xmlns="http://www.w3.org/2000/svg" id="glyph1">
         <g transform="scale(1,-1)">
           <path fill="#320000" d="M0 1024 L1024 1024 L1024 0 L0 0 L0 1024 L0 1024 Z" />
         </g>
