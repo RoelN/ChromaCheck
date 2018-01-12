@@ -4,11 +4,25 @@
         <meta charset="utf-8">
         <title>ChromaCheck by PixelAmbacht</title>
         <style>
+            body {
+                font-family: sans-serif;
+            }
+            h1 {
+                text-align: center;
+            }
+            h1 img {
+                display: block;
+                margin: 0 auto 1rem auto;
+                width: 10rem;
+            }
             div {
                 background: orangered;
                 color: white;
                 padding: 1em;
-                margin-bottom: 1em;
+            }
+            div, p {
+                max-width: 28rem;
+                margin: 0 auto 1rem auto;
             }
             .chromacheck-sbix .sbix,
             .chromacheck-colr .colr,
@@ -26,16 +40,23 @@
     </head>
 
     <body>
-        <h1>ChromaCheck by PixelAmbacht</h1>
+        <h1>
+            <a href="https://pixelambacht.nl">
+                <img src="https://pixelambacht.nl/img/logo-mexican-horrormovie.svg" alt="Pixelambacht logo">
+            </a>
+            ChromaCheck
+        </h1>
 
         <div class="sbix">Apple SBIX is <strong>not</strong> supported</div>
         <div class="colr">COLR/CPAL is <strong>not</strong> supported</div>
         <div class="svg">SVG-in-OpenType is <strong>not</strong> supported</div>
         <div class="cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
 
-        <p>ChromaCheck checks which <a href="https://pixelambacht.nl/2014/multicolor-fonts/">OpenType
-        color formats</a> are supported in this browser.
-        <a href="https://github.com/RoelN/ChromaCheck">Get the code on Github!</a></p>
+        <p>
+            ChromaCheck checks which <a href="https://pixelambacht.nl/2014/multicolor-fonts/">OpenType
+            color formats</a> are supported in this browser.
+            <a href="https://github.com/RoelN/ChromaCheck">Get the code on Github!</a>
+        </p>
 
         <script src="chromacheck-min.js"></script>
     </body>
