@@ -29,7 +29,7 @@ The SVG-on-canvas method might be replaced or extended with a non-SVG method to 
 
 ## Testing
 
-we'll be using BrowserStack to run ChromaCheck on all current browsers out there, so have a reliable, up-to-date list of browser support. Thanks BrowserStack for sponsing ChromaCheck! 💖
+We'll be using [BrowserStack](https://www.browserstack.com) to run ChromaCheck on all current browsers out there, so have a reliable, up-to-date list of browser support. Thanks BrowserStack for sponsing ChromaCheck! 💖
 
 ![Browserstack Logo](https://github.com/RoelN/ChromaCheck/blob/master/browserstack-logo.png)
 
