@@ -27,6 +27,12 @@ Take note that this test is async, so it can take a split millisecond before the
 
 The SVG-on-canvas method might be replaced or extended with a non-SVG method to address the SVG related issues. Likewise it'd be possible to include two CBDT/CBLC fonts to test with: one on the old specs, one one the new.
 
+## Testing
+
+we'll be using BrowserStack to run ChromaCheck on all current browsers out there, so have a reliable, up-to-date list of browser support. Thanks BrowserStack for sponsing ChromaCheck! 💖
+
+![Browserstack Logo](https://github.com/RoelN/ChromaCheck/blob/master/browserstack-logo.png)
+
 ## License
 
 ChromaCheck is released under the [MIT license](https://github.com/RoelN/ChromaCheck/blob/master/LICENSE.md).
