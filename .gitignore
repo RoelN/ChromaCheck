@@ -1,3 +1,4 @@
 .DS_Store
 chromacheck*.ttf
 chromacheck*.base64
+deploy.sh
