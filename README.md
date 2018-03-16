@@ -21,6 +21,7 @@ Take note that this test is async, so it can take a split millisecond before the
 
 ## Known issues
 
+* Safari will not load the fonts on first load, only on subsequent pageloads 😱(Working on a fix!)
 * IE11 on Windows 8 will report false negatives because of [a bug in drawing SVG to canvas in IE11](https://connect.microsoft.com/IE/feedback/details/809823/draw-svg-image-on-canvas-context).
 * IE10 in Windows 8 will report false negatives because of a very strict security measure when [drawing SVG to canvas](https://github.com/RoelN/ChromaCheck/issues/32).
 * CBDT/CBLC might be reported as not being supported, because ChromaCheck checks for the implementation as described by the spec. A few implementations in the wild, specifically Chrome on Android, do support CBDT/CBLC, but only when implemented with the specs during the proposal fase instead of the final specs. [More info.](https://github.com/RoelN/ChromaCheck/issues/8)
