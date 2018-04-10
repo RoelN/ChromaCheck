@@ -12,7 +12,7 @@ Firefox (on OSX?) has a bug that prevents color glyphs from being used on `canva
 
 Include `chromacheck-min.js` in your page and it'll add classes to the `html` element for each supported color format:
 
-* `chromacheck-svg` if there's support for SVG-in-OpenType.
+* `chromacheck-svg` if there's support for OpenType-SVG.
 * `chromacheck-colr` if there's support for COLR/CPAL.
 * `chromacheck-sbix` if there's support for Apple SBIX.
 * `chromacheck-cbdt` if there's support for CBDT/CBLC.
