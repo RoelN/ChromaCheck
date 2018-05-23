@@ -27,7 +27,7 @@
   function colorGlyphTest() {
     var res = {};
     res.cbdt = context.getImageData(10, 10, 1, 1).data[0] === 100; // CBDT/CBLC
-    res.colr = context.getImageData(10, 30, 1, 1).data[0] === 200; // COLR/CPAL
+    res.colr = context.getImageData(10, 30, 1, 1).data[0] === 200; // COLR
     res.sbix = context.getImageData(10, 50, 1, 1).data[0] === 150; // SBIX
     res.svg  = context.getImageData(10, 70, 1, 1).data[0] === 50;  // OpenType-SVG
 
