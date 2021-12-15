@@ -1,6 +1,8 @@
 # ChromaCheck
 
-ChromaCheck is a feature test to check if browsers support one of the four [color font formats](http://pixelambacht.nl/2014/multicolor-fonts/) when loaded as webfonts through `@font-face`. [See it in action here!](https://pixelambacht.nl/chromacheck)
+ChromaCheck is a feature test to check if browsers support one of the five color font formats (see list below) when loaded as webfonts through `@font-face`. [See it in action here!](https://pixelambacht.nl/chromacheck)
+
+Also, check out this this older article on [color font formats](http://pixelambacht.nl/2014/multicolor-fonts/), written before COLRv1 existed.
 
 **Please note that ChromaCheck currently [doesn't work for Edge 18+](https://github.com/RoelN/ChromaCheck/issues/40) :-(**
 
@@ -15,7 +17,8 @@ Older versions of Firefox, the first browser to support color fonts, had [some](
 Include `chromacheck-min.js` in your page and it'll add classes to the `html` element for each supported color format:
 
 * `chromacheck-svg` if there's support for OpenType-SVG.
-* `chromacheck-colr` if there's support for COLR.
+* `chromacheck-colr` if there's support for COLRv0.
+* `chromacheck-colrv1` if there's support for COLRv1.
 * `chromacheck-sbix` if there's support for SBIX.
 * `chromacheck-cbdt` if there's support for CBDT/CBLC.
 
